@@ -1,0 +1,167 @@
+Pinduoduo;Internet;Shanghai;China;Eastern China
+Unilever;Foodstuff;;Netherlands/United Kingdom;Europe
+Deutsche Bank;Bank;;Germany;Europe
+Albertson's;Retail;;United States;America
+Santander Central Hispano Group;Bank;;Spain;Europe
+Koninklijke Ahold;Retail;;Netherlands;Europe
+Kroger;Retail;;United States;America
+Tencent;Internet;Shenzhen;China;Southern China
+Mitsubishi Motors;Car;;Japan;Asia
+BNP Paribas;Bank;;France;Europe
+HSBC Holdings;Bank;;United Kingdom;Europe
+Delphi Automotive Systems;Auto parts;;United States;America
+Allianz;Insurance;;Germany;Europe
+Munich Re Group;Insurance;;Germany;Europe
+Chengdu AIG;Military;Chengdu;China;Southwestern China
+Home Depot;Retail;;United States;America
+Robert Bosch;Electrical and electronic;;Germany;Europe
+Cardinal Health;Pharmaceutical;;United States;America
+BASF;Chemistry;;Germany;Europe
+Meituan;Internet;Beijing;China;Northern China
+Target;Retail;;United States;America
+Agricultural Bank of China;Bank;Beijing;China;Northern China
+CGNU;Insurance;;United Kingdom;Europe
+Enron;Energy;;United States;America
+Tesco;Retail;;United Kingdom;Europe
+Industrial and Commercial Bank of China;Bank;Beijing;China;Northern China
+Peugeot;Car;;France;Europe
+Alcatel;Electrical and electronic;;France;Europe
+Dell Computer;Computer;;United States;America
+Safeway;Retail;;United States;America
+Nissho Iwai;Diversify;;Japan;Asia
+Royal Philips Electronics;Electrical and electronic;;Netherlands;Europe
+China North Industries Group Corporation;Military;Beijing;China;Northern China
+Johnson & Johnson;Pharmaceutical;;United States;America
+Samsung Electronics;Electrical and electronic;;Korea;Asia
+Nestlиж;Foodstuff;;Switzerland;Europe
+Hewlett-Packard;Computer;;United States;America
+ABN AMRO Holding;Bank;;Netherlands;Europe
+Honda Motor;Car;;Japan;Asia
+NEC;Electrical and electronic;;Japan;Asia
+J.C. Penney;Retail;;United States;America
+Berkshire Hathaway;Insurance;;United States;America
+Duke Energy;Electricity gas;;United States;America
+Goldman Sachs Group;Securities brokerage;;United States;America
+Pfizer;Pharmaceutical;;United States;America
+Fannie Mae;Finance;;United States;America
+Dynegy;Energy;;United States;America
+Exxon Mobil;Oil refining;;United States;America
+Rwe Group;Electricity gas;;Germany;Europe
+HypoVereinsbank;Bank;;Germany;Europe
+Morgan Stanley Dean Witter;Securities brokerage;;United States;America
+Total Fina Elf;Oil refining;;France;Europe
+Procter & Gamble;Household chemicals;;United States;America
+Reliant Energy;Electricity and gas utilities;;United States;America
+DaimlerChrysler;Car;;Germany;Europe
+L.M. Ericsson;Electrical and electronic;;Sweden;Europe
+Credit Suisse;Bank;;Switzerland;Europe
+Nippon Telegraph & Telephone;Telecommunications;;Japan;Asia
+Tokyo Electric Power;Electricity gas;;Japan;Asia
+Sears Roebuck;Retail;;United States;America
+Hyundai;Diversify;;Korea;Asia
+General Motors;Car;;United States;America
+BMW;Car;;Germany;Europe
+Dai-ichi Mutual Life Insurance;Insurance;;Japan;Asia
+SK;Oil refining;;Korea;Asia
+Freddie Mac;Finance;;United States;America
+Philip Morris;Food tobacco;;United States;America
+Toshiba;Electrical and electronic;;Japan;Asia
+Metro;Retail;;Germany;Europe
+Chevron;Oil refining;;United States;America
+Renault;Car;;France;Europe
+Texaco;Oil refining;;United States;America
+Samsung;Diversify;;Korea;Asia
+Lucent Technologies;Electrical and electronic;;United States;America
+China Construction Bank;Bank;Beijing;China;Northern China
+MiHoYo;Game;Shanghai;China;Eastern China
+Thyssen Krupp;Industrial and agricultural equipment;;Germany;Europe
+ENI;Oil refining;;Italy;Europe
+Nippon Life Insurance;Insurance;;Japan;Asia
+Kmart;Retail;;United States;America
+Royal Bank of Scotland;Bank;;United Kingdom;Europe
+Verizon Communications;Telecommunications;;United States;America
+Matsushita Electric Industrial;Electrical and electronic;;Japan;Asia
+Bank of America Corp.;Bank;;United States;America
+State Farm Insurance Cos.;Insurance;;United States;America
+AXA;Insurance;;France;Europe
+State Power Corporation;Electricity;Beijing;China;Northern China
+BT;Telecommunications;;United Kingdom;Europe
+Pemex;Crude;;Mexico;America
+McKesson HBOC;Retail;;United States;America
+Mizuho Holdings;Bank;;Japan;Asia
+Toyota Motor;Car;;Japan;Asia
+Royal Dutch/Shell Group;Oil refining;;Netherlands/United Kingdom;Europe
+Nortel Networks;Electrical and electronic;;Canada;America
+Sumitomo;Diversify;;Japan;Asia
+Prudential;Insurance;;United Kingdom;Europe
+Xiaomi;Computer;Beijing;China;Northern China
+Conoco;Oil refining;;United States;America
+American International Group;Insurance;;United States;America
+Citigroup;Finance;;United States;America
+WorldCom;Telecommunications;;United States;America
+Ing Group;Insurance;;Netherlands;Europe
+OPPO;Computer;Dongguan;China;Southern China
+General Electric;Electrical and electronic;;United States;America
+Costco Wholesale;Retail;;United States;America
+Allstate;Insurance;;United States;America
+Meiji Life Insurance;Insurance;;Japan;Asia
+Hitachi;Electrical and electronic;;Japan;Asia
+PDVSA;Oil refining;;Venezuela;America
+Netease;Internet;Guangzhou;China;Southern China
+Repsol YPF;Oil refining;;Spain;Europe
+Deutsche Post;Postal parcels;;Germany;Europe
+Mitsubishi;Diversify;;Japan;Asia
+Sina;Internet;Beijing;China;Northern China
+TIAA-CREF;Insurance;;United States;America
+Mitsubishi Electric;Electrical and electronic;;Japan;Asia
+Compaq Computer;Computer;;United States;America
+BP;Oil refining;;United Kingdom;Europe
+Bilibili;Internet;Shanghai;China;Eastern China
+Carrefour;Retail;;France;Europe
+USX;Oil refining;;United States;America
+Sinopec;Petrochemical;Beijing;China;Northern China
+Merck;Pharmaceutical;;United States;America
+AT&T;Telecommunications;;United States;America
+Deutsche Telekom;Telecommunications;;Germany;Europe
+Electricite De France;Electricity;;France;Europe
+J.P. Morgan Chase;Bank;;United States;America
+China Petroleum;Oil refining;Beijing;China;Northern China
+Intl. Business Machines;Computer;;United States;America
+Ping An Insurance (Group) Company Of China;Insurance;Shenzhen;China;Southern China
+Itochu;Diversify;;Japan;Asia
+China Merchants Bank;Bank;Shenzhen;China;Southern China
+MetLife;Insurance;;United States;America
+Zurich Financial Services;Insurance;;Switzerland;Europe
+Motorola;Electrical and electronic;;United States;America
+Sony;Electrical and electronic;;Japan;Asia
+UBS;Bank;;Switzerland;Europe
+Intel;Semiconductor;;United States;America
+Sumitomo Life Insurance;Insurance;;Japan;Asia
+Merrill Lynch;Securities brokerage;;United States;America
+U.S. Postal Service;Postal parcels;;United States;America
+Fortis;Insurance;;Netherlands/Belgium;Europe
+SBC Communications;Telecommunications;;United States;America
+Boeing;Aerospace;;United States;America
+Ingram Micro;Retail;;United States;America
+Vivendi Universal;Amusement;;France;Europe
+Bank Of China;Bank;Beijing;China;Northern China
+Wal-Mart Stores;Retail;;United States;America
+Suez;Water;;France;Europe
+China Electronics Technology Group Corporation;Electrical and electronic;Beijing;China;Northern China
+Crижdit Agricole;Bank;;France;Europe
+Mitsui;Diversify;;Japan;Asia
+Fiat;Car;;Italy;Europe
+Assicurazioni Generali;Insurance;;Italy;Europe
+E.I. du Pont de Nemours;Chemistry;;United States;America
+E. ON;Diversify;;Germany;Europe
+Huawei;Computer;Shenzhen;China;Southern China
+Siemens;Electrical and electronic;;Germany;Europe
+Fujitsu;Computer;;Japan;Asia
+Baidu;Internet;Beijing;China;Northern China
+Marubeni;Diversify;;Japan;Asia
+Volkswagen;Car;;Germany;Europe
+Nissan Motor;Car;;Japan;Asia
+Alibaba;Internet;Hangzhou;China;Eastern China
+United Parcel Service;Postal parcels;;United States;America
+Ford Motor;Car;;United States;America
+France Tижlижcom;Telecommunications;;France;Europe

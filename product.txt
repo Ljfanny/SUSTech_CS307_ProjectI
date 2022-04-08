@@ -1,0 +1,325 @@
+T67P542;Tv Base
+E6N2308;Electronic Dictionary
+E9G8372;Exhaust Fan
+M421X86;Multifunctional
+SE17564;Server Barebones
+L17546O;Laptop Docking Station
+D8150P6;Dot Matrix Printer
+HD86793;Humidifier
+P41857Y;Physical Security Isolation
+SY73215;Steering Wheel
+H7143H9;Hot Pot
+B239N58;Building Intercom
+S2180L4;Serial Communication Server
+C95F078;Casette Library
+MR92570;Microphone Digital Companion
+M9J6453;Mp4
+S5291W4;Server Power
+T35X601;Toilet Seat
+D7903R1;Disk Array
+S86042Z;Security Camera
+C3752Y9;Camera Battery
+H8713D4;Hard Disk Recording
+A35J746;Air Conditioner
+D56294N;Dvr
+I41V392;Ink Cartridge
+L7B6430;Laptop'S Battery
+P1275R8;Print Server
+P4052D1;Photo Box
+P20O395;Pedometer
+OP18549;Optical Transceiver
+FK39705;Flat Film
+H5684K7;Hard Disk
+M79W815;Mobile Phone Car Accessories
+T739U65;Tape Drives
+D0Q2543;Desktop Pc
+HW53167;Home Theater
+C741G20;Card Reader
+T0E9518;Tester
+P968H24;Power Supply
+W08294X;Washing Machine
+G053V91;Game Light Gun Game Peripheral
+A08264O;Antivirus And Email Filtering
+O8C6513;Office Software
+S7K6834;Screen Splitter
+L47869Q;Lightning Protection Products
+AE80564;Air Purifier
+L92148E;Large Format Printer
+C02614Q;Cpu
+A392R56;Antivirus Software
+B830R57;Barcode And Card Reading Equipment
+F8E7125;Fax Machine Copier
+R243J08;Remote Control
+L0528N6;Laminator Mo Drive
+A273M51;Anti-Slip Mobile Phone
+YS95071;Yuba
+M328K91;Monitor
+HI14706;Hotel Entertainment
+A37260X;Anti-Theft Alarm Host
+C48967S;Charger
+M97X845;Mobile Power
+E7R6098;E-Book
+O032T69;Online Telephone
+DR28405;Database Software
+F76983D;Flash Accessories
+R5F0782;Router
+MM72065;Multiplexer
+DT47956;Dvd Player
+M713N46;Microscope
+P8130N9;Printer
+P7604Q5;Pbx
+T28310Y;Tv Hanger
+WJ50817;Wireless Access Point
+D50A198;Digital Camera
+C96H382;Cluster
+G21467A;Gps
+RC12709;Receipt Printer
+T7E2913;Toll Machine
+MR46392;Mobile Phone
+C681E75;Cell Phone Battery
+I291Q38;Isbn Printer
+TU23769;Telescope
+A794O23;Adapter Ring
+O853L07;Other Accessories
+LR91308;Laminating Machine
+H4239U1;Handwriting Input
+T9T8140;Toaster Electric Oven
+D230D47;Dishwasher
+A50L172;Air-Conditioning Fan
+C6C1543;Color Management
+GC81302;Gas Water Heater
+H239M48;Hard Disk
+N89L425;Network Card
+CY08734;Cursor Marking Machine
+L15649H;Line Printer
+M6328D7;Mouse
+I072X68;Industrial Network Switch
+P3650F7;Precision Air Conditioner
+VM86749;Viewfinder
+D0W8356;Digital Mobile Tv
+W49310P;Wireless Network Card
+E738Y40;Electric Toothbrush
+PY35974;Print Media
+C98142A;Camera Remote
+L8N0649;Laptop
+L504L71;Laptop Power Adapter
+C46258Y;Cleaning And Maintenance
+L0X9362;Laser Printer
+F6L2495;Flash Card
+P6398B4;Pressure Cooker
+CF29758;Cd-Rom Box
+GS13927;Game Pack
+R54810N;Repeater
+L891S65;Lcd Tv
+F24170J;Fruit And Vegetable Washing Machine
+H089L35;Hood
+P15647X;Plasma Tv
+S2501J4;Server Hard Drive
+U198C32;U Disk
+T9508D4;Traffic Management
+V5W8496;Vacuum Cleaner
+C2056I7;Cabinet
+TO87603;Tv Player
+I357B21;Internet Behavior Management
+W9718W3;Workstation
+BP82450;Billing System
+G071O86;Game Machine Wire
+C6C1349;Coffee Machine
+R796N84;Range Hood
+K62879Z;Keyboard And Mouse Set
+T0X9417;Telephone
+A31Y204;All In One Computer
+S93N807;Speaker Accessories
+G9372K0;Game Charger
+H18Z450;Hard Disk Extraction Box
+WC49732;Wireless Hd
+M8I1749;Monocular
+C7826A5;Computer Remote Control
+I94V518;Industrial Control Equipment
+F4K6753;Firewall
+C04R672;Converter
+C58G293;Camera Film
+T0829X7;Toner Cartridge
+M4Y8765;Multimedia Software
+C2B7139;Central Control System
+WM85971;Wireless Router
+V0W6342;Video Server
+C97014N;Cable
+W1473B8;Water Heater
+F9135R4;Freezer
+IZ80719;Intranet Security Network Vulnerability Scanning
+N13J804;Notebook Case
+CS90168;Customer Management Software Crm
+P09Y825;Pocket Pc
+AE91287;Application Supervision
+N74Y235;Network Extender
+D51962U;Dehumidifier
+N62Z458;Notebook Accessories
+M0467E1;Mobile Phone Film
+F9N8470;Focusing Screen
+CO19853;Cd-Rom
+P56U187;Power Amplifier
+EZ12538;Electric Fan
+CN93120;Chassis
+P6O1843;Pager
+P02C741;Paper Cutter
+T035M47;Tablet
+H64578X;Heat Sink
+S7843Q5;Server Memory
+A4A8763;Attendance Machine
+R2I4560;Real Estate
+MC32085;Money Counter
+R58049A;Reading Machine
+S8465W1;Solar Water Heaters
+AU79605;Antenna System
+C2F0671;Cd
+C45R631;Codec
+S40897X;Server Motherboard
+FG91426;Fiber Equipment
+CZ28413;Car Equipment
+R7248S9;Recording Pen
+C37A594;Camera Bag
+S956G17;Slr Handle
+RZ42653;Repeater
+LO12047;Lens
+NY39107;Notebook Film
+D265U39;Dye Sublimation Printer
+I36Z941;Image Alarm
+B189A57;Bluetooth Adapter
+S6I1543;Software Encryption
+C367T20;Communication Software
+D7Y5182;Destroy Equipment
+C63081N;Cd Duplicator
+SR61908;Saas Software
+E895N12;Earphone
+W05C734;Water Dispenser
+EE05684;Electric Iron
+L29837Y;Laser Pointers And Presenters
+S15H647;Surveillance Around
+T1239W5;Tablet Bag
+G8573U9;Game Joystick
+F790I64;Flash
+UL87156;Ups Power Shredder
+FC40169;Function Server
+C634K72;Cash Register
+TS64823;Twisted Pair
+V6Q9754;Voice Recording
+B8E1796;Binoculars
+SW03642;Soy Milk Machine
+M85D039;Monitor
+CG63821;Computer Terminal
+M2589S0;Mp3
+L85R920;Load Balancing
+C9520Y6;Cold Laminator
+L903I17;Lens Cap
+I436H05;Internet Living Room Fitness
+M5809H7;Motherboard
+CC50327;Central Water Heater
+O9F4205;Office Equipment Accessories
+P9L0284;Program-Controlled Switch
+EU82057;Electric Baking Pan
+S0912X5;Server
+D1G4290;Digitizer
+S7Z8134;Server Chassis
+D68950Z;Digital Frame
+I8206B5;Induction Cooker
+MG73026;Mobile Phone Companion
+IQ87164;Inkjet Printers
+JS30927;Juicer
+R6K1395;Ram
+L8930C4;Laptop Display
+I79Y023;Infrared Adapter
+S03485W;Sound Card
+DD18704;Digital Accessories
+E8T2037;Electric Heater
+W318D96;Walkie-Talkie
+V968Q15;Video Game Controller
+M40V792;Mobile Phone Charger
+K7458M2;Keyboard
+F1L0847;Foot Bath Eye Protection Lamp
+V56301I;Video Capture Card
+SB01298;Scanner
+T1749L0;Transceiver
+G427L06;Game Console Film
+BE04182;Binding Machine
+T95761U;Tablet Base
+L5T1069;Lcd Monitor
+ME59832;Mouse Foot Sticker
+DB83217;Disinfection Cabinet
+A58192Z;Access Control Machine
+C8739R1;Call Center
+TT21465;Translation Software
+L7P4035;Laptop Desk
+R81O564;Radio Yogurt Maker
+R04W892;Ribbon
+B306F21;Barebones
+E4280M5;Epilator
+T540P67;Telephone Conference
+SK73928;Surveillance Capture Card
+M62870K;Massager
+W920W86;Wireless Security
+M859T76;Modular Interface Card Hub
+T1R9247;Tv Wall
+M320L69;Motherboard Chipset
+S1490W6;Shutter Release
+I1M6430;Image Software Typesetting Software
+M2348K0;Mobile Hard Disk
+A59027Z;Aided Design
+M108M47;Micro-Wave Oven
+FJ71643;Filter
+C2698S3;Console
+C21057Z;Cutting Plotter
+S92348F;Server Accessories
+C91D367;Camera
+R39U102;Refrigerator
+S36N209;Ssd
+A4158M9;Access Control System
+SL87069;Set Top Box
+S8104Z6;Speaker
+IY01329;Induction Detector
+C186H47;Connecting Line
+C1F0953;Computer Fingerprint Encryption Lock
+B56K283;Blu-Ray Player
+T5382D6;Tape
+C78629B;Cd Print Recorder
+O36987R;Operating System
+G80142H;Game Console Battery
+PI37560;Power Line Communication Equipment
+G70Z416;Graphics Card
+V0147T3;Video Distributor
+CM46520;Cable Adapter Card
+ER04531;Electric Fenc
+H7Y6824;Hand-Held Gaming Device
+TI26891;Teaching Software
+H9842K1;Hard Disk
+M4329T8;Multimedia
+G75X306;Game Console Memory
+T75D268;Tripod
+ML18593;Minicomputer
+N2364L9;Network Management And Backup Softwarevirtualization Software
+M9P8604;Mobile Phone Stylus
+T38951Z;Tablet Case
+M48J309;Mail Server Software
+A094G67;Access Controller
+AA85346;All-In-One Printing Machine
+I53862I;Integrated Wiring
+F40365I;Fiber Optic Cable
+TF15948;Toner
+A02N847;Audio And Video Cable
+E2L5374;Electric Kettle
+D93P178;Develop Software
+S3R8754;Switch
+C7G8396;Cellphone Data Line
+P45Q120;Photocopying Machine
+DE13695;Display Chip
+R45327J;Rice Cooker
+M489T70;Mouse Pad
+P1D2567;Phone Voice Card
+C9W7563;Card Printer
+L60241X;Label Printer
+M70628E;Mobile Phone Base
+H362I81;Hair Dryer
+W52V643;Wireless Network Card
+R6713Q9;Razor
+G58A216;Gas Stoves
+D8560Q1;Digital Camera

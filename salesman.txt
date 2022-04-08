@@ -1,0 +1,990 @@
+Eastern China;Jiang Qizhen;12111414;Female;19;Eastern China
+Eastern China;Lv Qiufeng;12110809;Female;19;Eastern China
+Eastern China;Zheng Runyi;11812628;Male;22;Eastern China
+Eastern China;Dou Youqing;11612519;Female;24;Eastern China
+Europe;Alistair Smith;12011919;Male;20;Europe
+Europe;Jode Evans;11311100;Female;27;Europe
+Europe;Ross Edwards;11610329;Male;24;Europe
+Europe;Steven Taylor;11112326;Male;29;Europe
+Europe;Andrew Johnson;11610803;Male;24;Europe
+Europe;Juliana Harris;11110725;Female;29;Europe
+Europe;Fidelia Hall;12012220;Female;20;Europe
+Europe;Ted White;11112911;Male;29;Europe
+Europe;Polly Walker;12112727;Female;19;Europe
+Europe;Emlyn Clarke;11710106;Male;23;Europe
+Europe;Nicole Taylor;11211510;Female;28;Europe
+Europe;Mimi Jackson;11910621;Female;21;Europe
+Europe;Basil White;12212123;Male;18;Europe
+Europe;Cynthia Patel;12111625;Female;19;Europe
+Europe;Irwin Green;12111906;Male;19;Europe
+Europe;Priscilla Thompson;11711710;Female;23;Europe
+Europe;Carrie Clarke;11711701;Female;23;Europe
+Europe;Dulcie Patel;11510201;Female;25;Europe
+Europe;Debby Williams;11810914;Female;22;Europe
+America;Ralph Thompson;11612521;Male;24;America
+America;Lou Green;12110421;Male;19;America
+America;Nicholas Hughes;11212200;Male;28;America
+America;Gracie Thomas;11411929;Female;26;America
+America;Martina Patel;11611508;Female;24;America
+America;Malcolm Brown;11911204;Male;21;America
+America;Colin Jones;12012309;Male;20;America
+America;Vivian Brown;11210120;Male;28;America
+America;Wayne Taylor;12211614;Male;18;America
+Europe;Theobald Robinson;11811426;Male;22;Europe
+Europe;Katharine Thompson;11810625;Female;22;Europe
+Europe;Alistair Lewis;11312521;Male;27;Europe
+Europe;Rosalind Harris;11212008;Female;28;Europe
+Europe;Samuel Johnson;11210622;Male;28;Europe
+Europe;Tessa White;11311906;Female;27;Europe
+Europe;Lisa Smith;11211002;Female;28;Europe
+Europe;Bernie Smith;11612024;Male;24;Europe
+Europe;Joseph Taylor;11910916;Male;21;Europe
+Europe;Camilla Thompson;11611210;Female;24;Europe
+Europe;Joseph Davies;11510416;Male;25;Europe
+Europe;Christine Evans;11611627;Female;24;Europe
+Europe;Sophia Davies;11910210;Female;21;Europe
+Europe;Lee Lewis;12111307;Male;19;Europe
+Europe;Theodore Jones;11411314;Male;26;Europe
+America;Hector White;11611227;Male;24;America
+America;Mabel Smith;11911804;Female;21;America
+America;Muriel White;12111613;Female;19;America
+Southern China;Feng Zhenming;11511523;Male;25;Southern China
+Southern China;Yu Xuelu;11510013;Female;25;Southern China
+Asia;Gracie Williams;12211518;Female;18;Asia
+Asia;Archibald Thompson;11210008;Male;28;Asia
+Asia;Jeanie Wilson;11612609;Female;24;Asia
+Asia;Theo White;11510326;Male;25;Asia
+Asia;Pius Hughes;11710803;Male;23;Asia
+Asia;Charlene Wright;11612301;Female;24;Asia
+Asia;Millie Robinson;11611811;Female;24;Asia
+Asia;Agnes Roberts;11510305;Female;25;Asia
+Asia;Murray Edwards;11810112;Male;22;Asia
+Asia;Enos White;11511922;Male;25;Asia
+Asia;Matt Thompson;11710512;Male;23;Asia
+Europe;Adelina Hughes;11712202;Female;23;Europe
+Europe;Sonia Wright;11512408;Female;25;Europe
+Europe;Sebastian Roberts;11812006;Male;22;Europe
+Europe;Christian White;11611101;Male;24;Europe
+Europe;Marilyn Harris;11112918;Female;29;Europe
+Europe;Dottie Walker;11710029;Female;23;Europe
+Europe;Bernie Wilson;12011319;Male;20;Europe
+Europe;Milton Hall;11112316;Male;29;Europe
+Europe;Karl Hughes;12212006;Male;18;Europe
+America;Elroy Edwards;11512118;Male;25;America
+America;Avis Roberts;11411901;Female;26;America
+America;Sally Thomas;12212215;Female;18;America
+America;Benjamin Green;12112001;Male;19;America
+America;Bobby Roberts;11412713;Male;26;America
+America;Sean Jackson;11510427;Male;25;America
+America;Andrew Davies;12110203;Male;19;America
+America;Mabel Patel;11610318;Female;24;America
+America;Hedwig Williams;12211226;Female;18;America
+America;Deirdre Evans;11211217;Female;28;America
+America;Tracy Johnson;11611819;Female;24;America
+America;Faustina Hall;11412900;Female;26;America
+America;Marcia Hall;12112122;Female;19;America
+America;Liz Jones;11710914;Female;23;America
+America;Jeffrey Robinson;11212711;Male;28;America
+Europe;Kirk Roberts;11211610;Male;28;Europe
+Southwestern China;Feng Yixian;11412106;Male;26;Southwestern China
+Southwestern China;He Yunshuo;11712016;Male;23;Southwestern China
+Southwestern China;Zhang Wenke;11811304;Male;22;Southwestern China
+Southwestern China;Jiang Zibin;11710012;Male;23;Southwestern China
+Southwestern China;Wu Yuanchun;12010008;Female;20;Southwestern China
+Southwestern China;Shen Yuanchun;11810206;Female;22;Southwestern China
+Southwestern China;Lv Wanzhi;11310620;Female;27;Southwestern China
+Southwestern China;Chen Chunfu;11512413;Female;25;Southwestern China
+Southwestern China;Wang Jiaxuan;11812826;Male;22;Southwestern China
+Southwestern China;Qian Jingxiang;11912215;Male;21;Southwestern China
+Southwestern China;Hua Wenjing;11910723;Male;21;Southwestern China
+Southwestern China;Zhou Manrui;11610317;Male;24;Southwestern China
+Southwestern China;Yan Jiaye;12211326;Male;18;Southwestern China
+Southwestern China;He Benqing;11610101;Male;24;Southwestern China
+Southwestern China;Shi Shaohu;11412820;Male;26;Southwestern China
+Southwestern China;Shi Yuzhou;11712019;Male;23;Southwestern China
+Southwestern China;Chen Yuanxiang;11211219;Male;28;Southwestern China
+Southwestern China;Chen Dongyan;12012820;Female;20;Southwestern China
+America;Julian Wilson;11111510;Male;29;America
+America;Poll Robinson;12011723;Female;20;America
+America;Frankie Wright;12010225;Male;20;America
+America;Joe Jackson;11212524;Male;28;America
+America;Mandy Smith;11412311;Female;26;America
+America;Fran Thompson;11911112;Female;21;America
+America;Sadie Hughes;11711514;Female;23;America
+America;Victor Lewis;11410502;Male;26;America
+America;Timothy Wright;11412623;Male;26;America
+America;Ed Davies;11810104;Male;22;America
+America;Nan Brown;11710008;Female;23;America
+America;Sara Patel;11210425;Female;28;America
+America;Micky Patel;12011708;Male;20;America
+America;Pam Wright;12011424;Female;20;America
+America;Moira Hughes;12210529;Female;18;America
+America;Leila Roberts;11511312;Female;25;America
+America;Lenny Jackson;11111605;Male;29;America
+America;Bob Lewis;11310829;Male;27;America
+America;Flora Thomas;11411019;Female;26;America
+America;Louisa Roberts;11812007;Female;22;America
+America;Persis Wright;11510816;Female;25;America
+America;Richie Roberts;11812407;Male;22;America
+America;Dudley White;11812728;Male;22;America
+America;Georgie Taylor;12010120;Female;20;America
+America;Benjamin Wilson;11712325;Male;23;America
+America;Ted Taylor;11710818;Male;23;America
+America;Roger White;11311712;Male;27;America
+America;Juliet Smith;12010313;Female;20;America
+Europe;Audrey Evans;11310324;Female;27;Europe
+Europe;Mildred Wright;11211017;Female;28;Europe
+Europe;Victor Lewis;11712200;Male;23;Europe
+Europe;Alistair Walker;11311901;Male;27;Europe
+Europe;Pat Wilson;11412011;Male;26;Europe
+Europe;Leslie Brown;11610326;Female;24;Europe
+Europe;Bonny Robinson;11211429;Female;28;Europe
+Europe;Octavius Davies;11310313;Male;27;Europe
+Europe;Fidelia Brown;11411425;Female;26;Europe
+Europe;Ray Wilson;12110429;Male;19;Europe
+Europe;Carrie Hughes;12110020;Female;19;Europe
+Europe;Dave Jones;11510209;Male;25;Europe
+America;Darrell Johnson;12011702;Male;20;America
+America;Patience Hughes;12012922;Female;20;America
+America;Winifred Roberts;11211210;Female;28;America
+America;Marcia Wright;11912320;Female;21;America
+America;Ollie Patel;11110405;Male;29;America
+America;Jackie Thomas;11211620;Female;28;America
+America;Florence Johnson;11511403;Female;25;America
+America;Diana Thompson;11911604;Female;21;America
+America;Crystal Walker;11910015;Female;21;America
+America;Jennifer Walker;11710304;Female;23;America
+America;Caesar Roberts;11210026;Male;28;America
+America;Salome Patel;11210906;Female;28;America
+Europe;Auberon Robinson;11211721;Male;28;Europe
+Europe;Florence Lewis;11812209;Female;22;Europe
+Europe;Julian Clarke;11810021;Male;22;Europe
+Europe;Rupert Walker;11610022;Male;24;Europe
+Europe;Jock Walker;11710522;Male;23;Europe
+Europe;Milton Smith;12110704;Male;19;Europe
+Europe;Ollie Smith;11612502;Male;24;Europe
+Northern China;He Hanwu;11612410;Male;24;Northern China
+Northern China;Jing Kaiyu;11611500;Male;24;Northern China
+America;Catherine Clarke;11112520;Female;29;America
+Northern China;Wang Linglian;12112312;Female;19;Northern China
+Northern China;Zou Jingye;11910106;Male;21;Northern China
+Northern China;Zhou Hanling;11410421;Female;26;Northern China
+Northern China;Li Linglian;11112116;Female;29;Northern China
+Northern China;Wei Ruize;11912713;Male;21;Northern China
+Northern China;Yan Xiangheng;11210708;Male;28;Northern China
+Europe;Hannah Jackson;12212407;Female;18;Europe
+Europe;Dermot Lewis;11112504;Male;29;Europe
+Europe;Burt Robinson;12010902;Male;20;Europe
+Europe;Robin Green;11811307;Female;22;Europe
+Europe;Olympia Thomas;11911627;Female;21;Europe
+Europe;Adolf Davies;12211913;Male;18;Europe
+Europe;Frieda Johnson;12112006;Female;19;Europe
+Europe;Jeff Lewis;11710828;Male;23;Europe
+Europe;Charlene Edwards;11610900;Female;24;Europe
+America;Lenny Harris;11610600;Male;24;America
+America;Ivan Harris;12110325;Male;19;America
+America;Danny Smith;12111219;Male;19;America
+America;Aggie Smith;11112822;Female;29;America
+Europe;Vivian Johnson;11910717;Male;21;Europe
+Europe;Ozzie Smith;12212108;Male;18;Europe
+Europe;Jim Johnson;11711609;Male;23;Europe
+Europe;Lucy Hall;12112210;Female;19;Europe
+Europe;Eleanor Patel;12110225;Female;19;Europe
+Europe;Rebecca Davies;11410826;Female;26;Europe
+Europe;Camilla Smith;11312828;Female;27;Europe
+Europe;Stan Thompson;12111112;Male;19;Europe
+Europe;Gavin Thomas;11410100;Male;26;Europe
+Europe;Bernadette Wilson;11911729;Female;21;Europe
+Europe;Nora Green;12011219;Female;20;Europe
+Europe;Frieda Thompson;11911702;Female;21;Europe
+Europe;Susan Johnson;11611106;Female;24;Europe
+Europe;Gillian Jones;11211305;Female;28;Europe
+Northern China;Qi Yousong;11112919;Female;29;Northern China
+Northern China;Jiang Wenyin;11211517;Male;28;Northern China
+Northern China;Tao Erqing;11712500;Female;23;Northern China
+Northern China;Wang Yuyang;12011818;Female;20;Northern China
+Northern China;Chu Fangqin;11811514;Female;22;Northern China
+Northern China;Qi Erqing;11211708;Female;28;Northern China
+Northern China;Li Cailing;11710825;Female;23;Northern China
+Northern China;Zhao Jiayu;12111601;Male;19;Northern China
+Northern China;Zhu Zicheng;11412313;Male;26;Northern China
+Northern China;Hua Yuwen;11511720;Female;25;Northern China
+Northern China;He Wenming;11812127;Male;22;Northern China
+Northern China;Qi Rufeng;11411616;Female;26;Northern China
+Northern China;Xie Jiashuai;11310409;Male;27;Northern China
+Northern China;Qi Zhuyu;11112523;Male;29;Northern China
+Northern China;Zheng Hanxiang;12111627;Female;19;Northern China
+Northern China;Chen Ruoke;12011416;Male;20;Northern China
+Northern China;Zhou Leqiao;12211711;Female;18;Northern China
+Northern China;Xie Zicheng;11412317;Male;26;Northern China
+Northern China;Li Ningzhen;11810208;Female;22;Northern China
+Northern China;Zheng Bochang;12211105;Male;18;Northern China
+Northern China;Wu Yuyang;11410101;Female;26;Northern China
+Northern China;Wei Mufeng;11510105;Male;25;Northern China
+Northern China;Qi Ruize;11410318;Male;26;Northern China
+Northern China;Tao Jiaji;11212815;Male;28;Northern China
+Northern China;Yu Shanwei;11612514;Female;24;Northern China
+Northern China;Qing Zhuyu;12111825;Male;19;Northern China
+Northern China;Qing Maoan;11510023;Male;25;Northern China
+Northern China;Zhang Peiling;11510426;Female;25;Northern China
+Northern China;Xie Zhenming;12211718;Male;18;Northern China
+Northern China;Jiang Yuqiao;11411917;Female;26;Northern China
+Northern China;Cao Chuling;11611606;Female;24;Northern China
+Northern China;Wang Fanzhen;12112609;Female;19;Northern China
+Northern China;Zhou Zhongxiao;11212119;Male;28;Northern China
+Northern China;Tao Yixuan;11312106;Male;27;Northern China
+Northern China;Xu Ziyan;11812018;Male;22;Northern China
+Northern China;Zhang Zhaoyu;11111311;Male;29;Northern China
+Northern China;Feng Jingping;11110802;Female;29;Northern China
+Europe;Fran Smith;11512016;Female;25;Europe
+Europe;Anne Jones;11810126;Female;22;Europe
+Europe;Martha Clarke;11410311;Female;26;Europe
+Europe;Undine Taylor;11512115;Female;25;Europe
+Europe;Dominic Green;11710327;Male;23;Europe
+Europe;Eric Lewis;11610016;Male;24;Europe
+Europe;Christian Wright;11311902;Male;27;Europe
+America;Glenda Taylor;11910811;Female;21;America
+America;Otto Clarke;11511317;Male;25;America
+Asia;Jeanie Evans;11410014;Female;26;Asia
+Asia;Edward Thompson;11912925;Male;21;Asia
+Asia;Tel Hughes;11612508;Male;24;Asia
+Asia;Joan Johnson;11612426;Female;24;Asia
+Asia;Dennis Patel;11911223;Male;21;Asia
+Asia;Adelina Taylor;11210506;Female;28;Asia
+Asia;Marilyn Hall;12112604;Female;19;Asia
+Asia;Uerica Hall;12011701;Female;20;Asia
+Europe;Bernadette Wright;11811911;Female;22;Europe
+Europe;Murray Davies;11210413;Male;28;Europe
+Europe;Anthea Smith;11712312;Female;23;Europe
+Northern China;Xie Yishuang;12011728;Female;20;Northern China
+Northern China;Kong Yibo;11311024;Female;27;Northern China
+Northern China;Xu Yingzhi;11911115;Female;21;Northern China
+America;Florence Walker;11312922;Female;27;America
+America;Auberon Smith;12210428;Male;18;America
+America;Felicity Roberts;11310009;Female;27;America
+Asia;Patience Robinson;11510409;Female;25;Asia
+Asia;Cherry Lewis;11912303;Female;21;Asia
+Asia;Janey Jackson;11410213;Female;26;Asia
+Asia;Martina Clarke;11112514;Female;29;Asia
+Asia;Marshall Roberts;11511825;Male;25;Asia
+Europe;Robby Jackson;12210524;Male;18;Europe
+Europe;Judy Wilson;11212823;Female;28;Europe
+Europe;Reg Johnson;11110916;Male;29;Europe
+America;Eli White;11611019;Male;24;America
+America;Errol White;11812521;Male;22;America
+America;Mary Wilson;11212510;Female;28;America
+America;Miriam Evans;11311817;Female;27;America
+Europe;Poll Jackson;11910706;Female;21;Europe
+Asia;Henry Lewis;12212027;Male;18;Asia
+Asia;Urania Walker;11411612;Female;26;Asia
+Asia;Amos Walker;11612315;Male;24;Asia
+Europe;Joseph Davies;12210020;Male;18;Europe
+Asia;Clarence Green;11512902;Male;25;Asia
+Asia;Geraint Walker;11310224;Male;27;Asia
+Asia;Jode Brown;12212801;Female;18;Asia
+Asia;Fiona Wilson;11510006;Female;25;Asia
+Asia;Sophronia Harris;11611721;Female;24;Asia
+Asia;Trevor Evans;12210929;Male;18;Asia
+Asia;Jessica Jones;12011018;Female;20;Asia
+Asia;Wilfred Smith;11710004;Male;23;Asia
+Asia;Steven Edwards;12211522;Male;18;Asia
+Asia;Edmund Clarke;12211014;Male;18;Asia
+Asia;Oliver Green;12112211;Male;19;Asia
+Asia;Ron Hall;12110722;Male;19;Asia
+Asia;Leslie Evans;12111323;Male;19;Asia
+Asia;Eulalia Brown;11712222;Female;23;Asia
+Asia;Leonard Clarke;12211508;Male;18;Asia
+Asia;Patti Jones;11512202;Female;25;Asia
+Asia;Graham Hughes;11812708;Male;22;Asia
+Asia;Patrick Johnson;12211220;Male;18;Asia
+Asia;Barbara Hall;11910129;Female;21;Asia
+Asia;Phoebe Smith;11911120;Female;21;Asia
+Asia;Hilda Harris;11710110;Female;23;Asia
+Asia;Anne Davies;11211323;Female;28;Asia
+Asia;Tommy Harris;12211603;Male;18;Asia
+America;Naomi Lewis;11212724;Female;28;America
+America;Ivy Walker;11211501;Female;28;America
+America;Joanne Jones;11511213;Female;25;America
+America;Lindsay Davies;11612800;Female;24;America
+America;Angelica Harris;12110614;Female;19;America
+America;Maureen Williams;12112505;Female;19;America
+America;Miranda Roberts;12212915;Female;18;America
+America;Alden Williams;11311405;Male;27;America
+America;Candida Jackson;11710128;Female;23;America
+Northern China;Zou Haozhen;11210204;Male;28;Northern China
+America;Jasper Wright;11911323;Male;21;America
+America;Clare Harris;11110319;Male;29;America
+America;Mary Clarke;11311921;Female;27;America
+America;Sandra Brown;11811417;Female;22;America
+America;Floyd Green;11310305;Male;27;America
+America;Malcolm Edwards;11312003;Male;27;America
+America;Crystal Brown;11412715;Female;26;America
+America;Lynn Brown;11512928;Female;25;America
+America;Luke Brown;12011920;Male;20;America
+Asia;Pete Evans;11111217;Male;29;Asia
+Asia;Sid Williams;11611702;Male;24;Asia
+Asia;Susanna Taylor;11310703;Female;27;Asia
+Europe;Jessy Clarke;12212618;Male;18;Europe
+Europe;Sal Edwards;11112206;Female;29;Europe
+Europe;Elsa Jones;12112300;Female;19;Europe
+America;Alma Williams;11810722;Female;22;America
+America;Aggie Smith;12111926;Female;19;America
+America;Cheryl White;12110515;Female;19;America
+America;Jesse Johnson;11112416;Male;29;America
+America;Olive Taylor;11110321;Female;29;America
+America;Felix Thomas;12112400;Male;19;America
+America;Lester Thompson;11712125;Male;23;America
+Europe;Charlene Hall;11411820;Female;26;Europe
+Europe;Amy Thompson;11611103;Female;24;Europe
+Europe;Theobald Thompson;11410203;Male;26;Europe
+Europe;Trudie Lewis;12010421;Female;20;Europe
+Europe;Clare Green;11611511;Female;24;Europe
+Europe;Ray Green;12011019;Male;20;Europe
+Europe;Brian Brown;11311700;Male;27;Europe
+Europe;Charlotte Davies;11311229;Female;27;Europe
+Europe;Betty Davies;12111828;Female;19;Europe
+Europe;Archibald Lewis;12010703;Male;20;Europe
+America;Sandra Williams;11112015;Female;29;America
+America;Noah Harris;11310914;Male;27;America
+America;Malachi Lewis;11410820;Male;26;America
+America;Karen Taylor;12210703;Female;18;America
+America;Gareth Thomas;11312426;Male;27;America
+America;Vivian Clarke;11112908;Male;29;America
+America;Jill Thomas;11112003;Female;29;America
+America;Evelyn Edwards;11111115;Female;29;America
+America;Melissa Evans;11410703;Female;26;America
+America;Tel Hughes;11211414;Male;28;America
+America;Paul Edwards;11710200;Male;23;America
+Europe;Isabel Clarke;11711603;Female;23;Europe
+Europe;Mitchell Hughes;11812801;Male;22;Europe
+Europe;Oz Smith;11810706;Male;22;Europe
+Europe;Hamilton Thomas;11812802;Male;22;Europe
+Europe;Allson Evans;12111324;Female;19;Europe
+Europe;Gracie Davies;12010605;Female;20;Europe
+Europe;Willy Patel;11312304;Male;27;Europe
+Europe;Vicky Hall;11210010;Female;28;Europe
+Europe;Teresa Davies;11812821;Female;22;Europe
+America;Moira Roberts;11712215;Female;23;America
+Europe;Dottie Thomas;12110129;Female;19;Europe
+Asia;Salome Robinson;11312409;Female;27;Asia
+Asia;Dustin Clarke;11610927;Male;24;Asia
+Asia;Jo Roberts;11512308;Female;25;Asia
+Asia;Benjamin Davies;12211106;Male;18;Asia
+Asia;Daniel Green;11611112;Male;24;Asia
+Asia;Anita Hall;11810107;Female;22;Asia
+Asia;Tina Hall;11112709;Female;29;Asia
+Asia;Scott Hall;11411005;Male;26;Asia
+Asia;Oliver Wilson;11211116;Male;28;Asia
+Asia;Lindsay Taylor;11312022;Female;27;Asia
+Asia;Allson Edwards;12210508;Female;18;Asia
+Asia;Arnold Wright;12010806;Male;20;Asia
+Asia;Lester Lewis;11911015;Male;21;Asia
+Asia;Ned Walker;11810305;Male;22;Asia
+Asia;Van Hughes;11912417;Male;21;Asia
+Asia;Florrie Williams;12212007;Female;18;Asia
+Asia;Brian Patel;11112809;Male;29;Asia
+America;Miranda Williams;12210427;Female;18;America
+Asia;Eva Harris;11112415;Female;29;Asia
+Asia;Theo Edwards;12010521;Male;20;Asia
+Northern China;Yang Bisong;11212212;Female;28;Northern China
+Northern China;Zou Lengrou;11711721;Female;23;Northern China
+Northern China;Bai Xuelu;12210516;Female;18;Northern China
+Northern China;Qing Mining;12011802;Female;20;Northern China
+Northern China;Zhu Wenlu;12211417;Male;18;Northern China
+Asia;Rosalie Evans;11212621;Female;28;Asia
+Asia;Bud Edwards;11611617;Male;24;Asia
+Asia;Mary Edwards;11610902;Female;24;Asia
+Asia;Richard Roberts;11512522;Male;25;Asia
+Asia;Lucinda Harris;11310020;Female;27;Asia
+Asia;Sean Jones;11111304;Male;29;Asia
+Asia;Norm Clarke;11410503;Male;26;Asia
+Asia;Maureen Davies;11212012;Female;28;Asia
+Asia;Rick Walker;11711310;Male;23;Asia
+Asia;Phoebe White;11110711;Female;29;Asia
+Asia;Elsa Lewis;11912610;Female;21;Asia
+Asia;Libby Patel;11610606;Female;24;Asia
+America;Bertran Hughes;12112511;Male;19;America
+Asia;Tricia Taylor;11910806;Female;21;Asia
+Northern China;Lv Yinghui;11611816;Female;24;Northern China
+Northern China;Jing Zhidie;12110806;Female;19;Northern China
+Northern China;Feng Yishan;11211015;Female;28;Northern China
+Northern China;Jiang Qicheng;11111618;Male;29;Northern China
+Northern China;Chu Pingning;11810114;Female;22;Northern China
+Northern China;Yan Chunan;11211813;Male;28;Northern China
+Northern China;Han Siyu;12211817;Male;18;Northern China
+Northern China;Chu Youqing;11912728;Female;21;Northern China
+Northern China;Qi Haizhen;11110111;Female;29;Northern China
+Northern China;Qi Hanxiang;11112200;Male;29;Northern China
+Asia;Hamilton Edwards;12211025;Male;18;Asia
+America;Dan Wright;11911807;Male;21;America
+America;Michael Harris;11411910;Male;26;America
+Europe;Mignon Walker;12212523;Female;18;Europe
+Europe;Gene Wright;11112106;Male;29;Europe
+Europe;Rosalind Roberts;11911424;Female;21;Europe
+Europe;Vincent Roberts;11511423;Male;25;Europe
+Asia;Greg Wright;12111702;Male;19;Asia
+Asia;Stanley Thomas;11712313;Male;23;Asia
+Asia;Olive Wright;11711521;Female;23;Asia
+Asia;Felix Walker;11612205;Male;24;Asia
+America;Susan Hall;11510115;Female;25;America
+Europe;Ed Harris;11411720;Male;26;Europe
+Europe;Nancy Wright;11410910;Female;26;Europe
+Asia;Sylvia Smith;12210311;Female;18;Asia
+Northern China;Zhang Yilv;12111907;Female;19;Northern China
+Northern China;Zheng Jiaxuan;12010201;Male;20;Northern China
+Northern China;Yang Xiangheng;12011508;Male;20;Northern China
+Northern China;Jing Ziyu;11111028;Male;29;Northern China
+Eastern China;Yang Nuobo;11612421;Male;24;Eastern China
+Eastern China;Qi Fanrui;11611317;Male;24;Eastern China
+Eastern China;You Yunzhi;11610700;Male;24;Eastern China
+Eastern China;Lv Shunhang;11212217;Male;28;Eastern China
+Eastern China;Shen Zhiteng;11511906;Male;25;Eastern China
+Eastern China;Zou Panlei;11312809;Female;27;Eastern China
+Eastern China;Zhu Fanyan;11712216;Female;23;Eastern China
+Europe;David Robinson;11510024;Male;25;Europe
+America;Toni Clarke;11310927;Female;27;America
+Europe;Cathy Edwards;11310127;Female;27;Europe
+Europe;Phil Robinson;12212700;Male;18;Europe
+Asia;Corinna Smith;12210120;Female;18;Asia
+Asia;Marshall Hall;11311615;Male;27;Asia
+Asia;Judy Wright;11511524;Female;25;Asia
+Asia;Georgina Smith;11911012;Female;21;Asia
+Asia;Jason Evans;11610717;Male;24;Asia
+Asia;Rosie Wilson;11911402;Female;21;Asia
+Asia;Gwendoline Thompson;12011418;Female;20;Asia
+Asia;Gene Jackson;11911118;Male;21;Asia
+Asia;Audrey Wright;11812701;Female;22;Asia
+Europe;Allen Walker;11311619;Male;27;Europe
+Europe;Vanessa Taylor;11510803;Female;25;Europe
+Europe;Basil White;12010417;Male;20;Europe
+Europe;Alfred Thomas;12111227;Male;19;Europe
+America;Philemen Brown;11410905;Male;26;America
+Asia;Abe Harris;12211623;Male;18;Asia
+Asia;Jane Robinson;11812423;Female;22;Asia
+Asia;Frank Jackson;11310103;Male;27;Asia
+Asia;Al Evans;11910017;Male;21;Asia
+Asia;Mike Evans;12111028;Male;19;Asia
+Asia;Maria Harris;12111107;Female;19;Asia
+Asia;Judith Edwards;11211527;Female;28;Asia
+Asia;Christopher Walker;11411312;Male;26;Asia
+Asia;Padraic Davies;11811615;Male;22;Asia
+Asia;Bridget Patel;11310110;Female;27;Asia
+Asia;Daisy Edwards;11210712;Female;28;Asia
+Asia;Saul Thompson;11410214;Male;26;Asia
+Asia;Gerald Thompson;11511513;Male;25;Asia
+Asia;Allson White;11710218;Female;23;Asia
+Asia;Sal Walker;11612913;Female;24;Asia
+Asia;Molly Wilson;11310212;Female;27;Asia
+Asia;Brittany White;11210713;Female;28;Asia
+Asia;Dermot Robinson;11210514;Male;28;Asia
+Asia;David Jackson;11911227;Male;21;Asia
+Northern China;Zhou Yuyang;11512503;Female;25;Northern China
+Northern China;Qian Xiaodie;11512212;Female;25;Northern China
+Northern China;Qing Muxue;11412917;Female;26;Northern China
+Northern China;Kong Yuqiao;11511608;Female;25;Northern China
+Northern China;Dou Ruichen;12111803;Male;19;Northern China
+Northern China;Shi Congde;11311011;Male;27;Northern China
+Northern China;Wei Shengjian;11410003;Male;26;Northern China
+Europe;Lou White;11212120;Male;28;Europe
+Europe;Norman Brown;11512601;Male;25;Europe
+Asia;Hal Taylor;11912318;Male;21;Asia
+Asia;Allen Williams;11512713;Male;25;Asia
+Southwestern China;Li Rufeng;11512206;Female;25;Southwestern China
+Southwestern China;He Hanwu;12112619;Male;19;Southwestern China
+Southwestern China;Jiang Hanxuan;11310425;Female;27;Southwestern China
+Southwestern China;Li Danqing;11812410;Female;22;Southwestern China
+Southwestern China;Zhang Chilv;11612727;Female;24;Southwestern China
+Southwestern China;Feng Hendong;11712421;Female;23;Southwestern China
+Southwestern China;Jiang Jingjie;11412302;Male;26;Southwestern China
+Southwestern China;Jiang Zhenming;12112622;Male;19;Southwestern China
+Southwestern China;You Bisong;11510400;Female;25;Southwestern China
+Southwestern China;Liu Hanshuang;11810525;Female;22;Southwestern China
+Southwestern China;Zheng Biyan;11910019;Female;21;Southwestern China
+Southwestern China;Chen Ziyan;11211422;Male;28;Southwestern China
+Southwestern China;Han Leqiao;12212110;Female;18;Southwestern China
+Southwestern China;Tao Yihan;11211202;Female;28;Southwestern China
+Southwestern China;Yu Miaocui;11711122;Female;23;Southwestern China
+Southwestern China;Wu Mimei;11411829;Female;26;Southwestern China
+Southwestern China;Xu Fanrui;11211029;Male;28;Southwestern China
+Southwestern China;Qian  biqin;11411614;Female;26;Southwestern China
+Southwestern China;Zhou Hanan;11511318;Female;25;Southwestern China
+Southwestern China;Zhao Bandan;11610109;Female;24;Southwestern China
+Southwestern China;Kong Xiaohuai;11811919;Female;22;Southwestern China
+Southwestern China;Hua Haonan;12012621;Male;20;Southwestern China
+Southwestern China;Yan Yingwen;11811720;Female;22;Southwestern China
+Southwestern China;You Xiangxing;11511710;Male;25;Southwestern China
+Southwestern China;Wei Ruichen;11810528;Male;22;Southwestern China
+Southwestern China;Shi Tingping;11312100;Female;27;Southwestern China
+Southwestern China;Xu Lvping;11510102;Female;25;Southwestern China
+Southwestern China;Tao Hanfeng;11612811;Female;24;Southwestern China
+Southwestern China;Zou Biyan;11210406;Female;28;Southwestern China
+Southwestern China;Zhao  youhui;11811223;Female;22;Southwestern China
+Southwestern China;Jiang Boran;11712501;Male;23;Southwestern China
+Southwestern China;Wu Xiangxing;11412001;Male;26;Southwestern China
+Southwestern China;Jing Jiaji;12210502;Male;18;Southwestern China
+Northern China;Shi Ningtao;12011924;Female;20;Northern China
+Northern China;Jing Manyun;12210612;Female;18;Northern China
+Europe;Theodoric Hughes;11211016;Male;28;Europe
+Europe;Otto Thomas;11912919;Male;21;Europe
+Europe;Diana Robinson;11210423;Female;28;Europe
+Europe;Gaston Harris;11311624;Male;27;Europe
+Europe;Mimi Green;12112613;Female;19;Europe
+America;Kent Wilson;11710805;Male;23;America
+Asia;Ronnie Jackson;12110528;Male;19;Asia
+Asia;Craig Jackson;11312723;Male;27;Asia
+Europe;Fidelia Wilson;12012421;Female;20;Europe
+America;Phyllis Evans;11112029;Female;29;America
+America;Joanne Taylor;11410404;Female;26;America
+Asia;Cecil Walker;11912404;Male;21;Asia
+Europe;Vivien Johnson;12211320;Female;18;Europe
+Asia;Evadne Patel;11711021;Female;23;Asia
+Asia;Hortensia Jackson;11511000;Female;25;Asia
+Northern China;Feng Lewen;11611122;Male;24;Northern China
+America;Lisa Taylor;11911700;Female;21;America
+Northern China;Zhang Rongchun;11410106;Male;26;Northern China
+Northern China;Feng Ziyu;12110824;Male;19;Northern China
+Northern China;Qing Fanyan;12012107;Female;20;Northern China
+Northern China;Wei Leqiao;11812422;Female;22;Northern China
+Northern China;Jing Hanshuang;11812518;Female;22;Northern China
+Northern China;Jiang Feiqing;11511203;Female;25;Northern China
+Northern China;Han Hanwu;12110927;Male;19;Northern China
+Northern China;Qing Shiyun;11710319;Female;23;Northern China
+Northern China;Qi Yilang;12210022;Male;18;Northern China
+Northern China;Qian Nandie;12211003;Female;18;Northern China
+America;Marcie Davies;12011517;Female;20;America
+Southern China;Yang Huanwen;11910202;Female;21;Southern China
+Southern China;Zou Jiayu;12112203;Male;19;Southern China
+Southern China;Bai Dongtao;11211418;Female;28;Southern China
+Southern China;Yan Chilv;11112222;Female;29;Southern China
+Southern China;Dou Huaiyu;12110902;Male;19;Southern China
+Southern China;Wu Yunzhi;11411723;Male;26;Southern China
+Southern China;Lv Yinxiang;11912423;Male;21;Southern China
+Southern China;Wang Yingtao;11612721;Female;24;Southern China
+Southern China;Qi Lvwei;12212815;Female;18;Southern China
+Southern China;He Chilv;12210911;Female;18;Southern China
+Southern China;Lv Yuanxiang;11412512;Male;26;Southern China
+Southern China;Cao Yuanhong;11410529;Male;26;Southern China
+Southern China;Feng Erhan;11311524;Female;27;Southern China
+Southern China;Zheng Anran;11411412;Male;26;Southern China
+Southern China;Wei Zibin;12012502;Male;20;Southern China
+Southern China;Wang Wenqiu;11810002;Female;22;Southern China
+Southern China;Sun Chufeng;11511814;Female;25;Southern China
+Asia;Tricia Lewis;11111113;Female;29;Asia
+Asia;Rosalyn Jones;11211302;Female;28;Asia
+Asia;Craig Thompson;11312229;Male;27;Asia
+Asia;Dan Thomas;11211428;Male;28;Asia
+Southern China;Chu Yiqing;11911902;Female;21;Southern China
+Southern China;Sun Hanxiang;11512809;Female;25;Southern China
+Southern China;Yu Kaiyu;11510826;Male;25;Southern China
+Southern China;Zhou Shishan;11511413;Female;25;Southern China
+Southern China;Yu Feiqing;11411003;Female;26;Southern China
+Southern China;Shi Tianlan;12211415;Female;18;Southern China
+Southern China;Wei Runbin;11311028;Male;27;Southern China
+Southern China;Qi Jiaye;11711728;Male;23;Southern China
+Southern China;Sun Siyu;12011500;Male;20;Southern China
+Southern China;Yu Ziyun;11412326;Female;26;Southern China
+Southern China;Zhu Yueqi;12010909;Male;20;Southern China
+Southern China;Wei Yanhong;11112606;Male;29;Southern China
+Southern China;Qing Qizheng;11210909;Male;28;Southern China
+Southern China;Cao Yanlei;11711714;Female;23;Southern China
+Southern China;Dou Huanqing;11912706;Female;21;Southern China
+Southern China;Sun  biqin;11911800;Female;21;Southern China
+Southern China;Yan Xiaofeng;11610015;Male;24;Southern China
+Southern China;Shui Xiangchen;11610925;Male;24;Southern China
+Southern China;Zou Xiaorou;11711209;Female;23;Southern China
+Southern China;Wang Zhengsong;12112900;Male;19;Southern China
+Southern China;Qi Binzhu;12112902;Male;19;Southern China
+Southern China;You Shengjian;11312700;Male;27;Southern China
+Southern China;Dou Yansen;11210925;Male;28;Southern China
+Southern China;Xu Yixian;11612909;Male;24;Southern China
+Southern China;Jing Xiaotian;11611905;Female;24;Southern China
+Eastern China;Jing Chutai;12112707;Male;19;Eastern China
+Eastern China;Wang Nuobo;11112126;Male;29;Eastern China
+Eastern China;He Fangqin;11712922;Female;23;Eastern China
+Eastern China;Liu Feilei;11511410;Female;25;Eastern China
+Eastern China;Zhou Lengrou;11512104;Female;25;Eastern China
+Eastern China;Zhang Jiayu;11710709;Male;23;Eastern China
+Eastern China;Lv Jingwei;11510407;Male;25;Eastern China
+Eastern China;Jiang Junzhuo;12010126;Male;20;Eastern China
+Eastern China;Shen Qizhen;11210028;Female;28;Eastern China
+Eastern China;Hua Erqiu;11210512;Female;28;Eastern China
+Eastern China;Chu Yiqing;11510902;Female;25;Eastern China
+Eastern China;Wang Jinbo;11512218;Male;25;Eastern China
+Eastern China;Zhang Wanzhi;12011529;Female;20;Eastern China
+Eastern China;Feng Ermei;12211000;Female;18;Eastern China
+Eastern China;You Hanfeng;11311108;Female;27;Eastern China
+Eastern China;Tao Yinghui;11712907;Female;23;Eastern China
+Eastern China;Xie Tingwei;12012613;Female;20;Eastern China
+Asia;George Smith;11612422;Male;24;Asia
+Asia;Camilla Smith;12211502;Female;18;Asia
+Asia;Jackie Taylor;11110611;Female;29;Asia
+Eastern China;Dou Youtong;11612910;Male;24;Eastern China
+Northern China;Cao Jiashu;11912419;Male;21;Northern China
+Northern China;Feng Chutai;11210011;Male;28;Northern China
+Northern China;Chu Guqiu;12211905;Female;18;Northern China
+Northern China;Xie Linchuan;11510010;Male;25;Northern China
+Northern China;Wu Jianxi;11112607;Male;29;Northern China
+Northern China;Jing Yingtian;12212927;Female;18;Northern China
+Northern China;Kong Youqing;11511127;Female;25;Northern China
+Northern China;Wei Maoan;11912623;Male;21;Northern China
+Asia;Della Johnson;12110324;Female;19;Asia
+Eastern China;Feng Shuliu;12011917;Female;20;Eastern China
+Eastern China;Shen Mengchao;11712520;Male;23;Eastern China
+Eastern China;Zhou Yuandong;11810916;Female;22;Eastern China
+Southern China;Zou Moyu;11412816;Male;26;Southern China
+Southern China;Bai Zibin;12212719;Male;18;Southern China
+Northern China;Wu Fanrui;11910524;Male;21;Northern China
+Europe;Hilda Clarke;11711214;Female;23;Europe
+Northern China;Sun Nianlan;11612806;Female;24;Northern China
+Northern China;Jiang Shengxiang;12012116;Male;20;Northern China
+Northern China;Qi Xiangling;11412101;Female;26;Northern China
+Northern China;Wang Shuliu;11612805;Female;24;Northern China
+Northern China;Zheng Rusi;12212008;Female;18;Northern China
+Eastern China;Han Pingtian;11612918;Female;24;Eastern China
+Eastern China;Bai Dongshuang;11812124;Female;22;Eastern China
+Eastern China;Wei Shiyan;11612717;Female;24;Eastern China
+Eastern China;Zhou Yishuang;11212719;Female;28;Eastern China
+Northern China;Chen Dongyan;11511625;Female;25;Northern China
+Northern China;Lv Ruoke;12111718;Male;19;Northern China
+Northern China;Chu Yingzhi;12211403;Female;18;Northern China
+Northern China;Yang Youling;11111429;Female;29;Northern China
+Northern China;Jiang Yahe;11710215;Female;23;Northern China
+Europe;Natalie Taylor;11812022;Female;22;Europe
+Eastern China;Kong Huaibai;11711922;Female;23;Eastern China
+Eastern China;Sun Hanxuan;12112329;Female;19;Eastern China
+Eastern China;Xie Yuyang;11611903;Female;24;Eastern China
+Eastern China;Zhang Qintao;11911428;Male;21;Eastern China
+Southern China;Li Jingwen;12211405;Male;18;Southern China
+Northern China;You Dongsi;11312609;Female;27;Northern China
+Southwestern China;Qian Xiaofeng;11912507;Female;21;Southwestern China
+Southwestern China;Xie Minghan;11710721;Male;23;Southwestern China
+Southwestern China;Zhang Yunzhi;12211001;Male;18;Southwestern China
+Southwestern China;Yang Jingjie;11110816;Male;29;Southwestern China
+Southwestern China;Kong Chengjun;11611223;Male;24;Southwestern China
+Southwestern China;Li Bingzhi;11110624;Male;29;Southwestern China
+Southwestern China;Dou Youyi;11512325;Female;25;Southwestern China
+Southwestern China;Bai Youyi;11712115;Female;23;Southwestern China
+Europe;Richard Edwards;11710209;Male;23;Europe
+Europe;Carl Roberts;11512914;Male;25;Europe
+Northern China;Zhao Rongchun;11410306;Male;26;Northern China
+Northern China;Shui Zuirou;12210519;Female;18;Northern China
+Northern China;He Wenyin;11712128;Male;23;Northern China
+Northern China;Shui Zhuyu;11112312;Male;29;Northern China
+Southern China;Bai Muhua;11112928;Male;29;Southern China
+Southern China;Li Yingtian;11610219;Female;24;Southern China
+Southern China;Chu Shengxiang;11111715;Male;29;Southern China
+Southern China;Qian Yuyang;12211322;Female;18;Southern China
+Southern China;Bai Ningzhen;11512213;Female;25;Southern China
+Southern China;He Hongbang;12012629;Male;20;Southern China
+Southern China;Wu Jiayu;12110800;Male;19;Southern China
+Southern China;Jiang Hanlan;11910709;Female;21;Southern China
+Southern China;Qian Huahong;12112825;Male;19;Southern China
+Southern China;Zhao Zhengsong;11812108;Male;22;Southern China
+Southern China;Zou Moyu;11512017;Male;25;Southern China
+Southern China;Yan Panhai;11612902;Female;24;Southern China
+Southern China;Chen Chundie;11611410;Female;24;Southern China
+Southern China;Wang Qiuyan;11512823;Female;25;Southern China
+Southern China;Qi Guqiu;12211619;Female;18;Southern China
+Southern China;Yang Congde;12111621;Male;19;Southern China
+Southern China;Yu Youcui;11311215;Female;27;Southern China
+Southern China;Han Changfei;11310719;Male;27;Southern China
+Southern China;Yang Penglong;11210418;Male;28;Southern China
+Southern China;Hua Boran;11910910;Male;21;Southern China
+Northern China;Shen Yuming;12111401;Male;19;Northern China
+Northern China;Wu Nuobo;11710328;Male;23;Northern China
+Northern China;Wang Qimei;11111727;Female;29;Northern China
+Northern China;Chen Gurui;11911609;Female;21;Northern China
+Northern China;Shi Yishan;11410520;Male;26;Northern China
+Northern China;Dou Lingzhi;11210503;Female;28;Northern China
+Asia;Malachi Hughes;12011310;Male;20;Asia
+Asia;Montgomery Hughes;11612520;Male;24;Asia
+Asia;Jess White;12010010;Female;20;Asia
+Asia;Flora Taylor;12110925;Female;19;Asia
+Asia;Hortensia Johnson;11610812;Female;24;Asia
+Asia;Di Hall;11611609;Female;24;Asia
+Southern China;Kong Ningbai;12211404;Female;18;Southern China
+Southern China;Qian Jichen;12010114;Male;20;Southern China
+Southern China;Wu Ruoyan;12212423;Female;18;Southern China
+Southern China;Dou Yishuang;11810411;Female;22;Southern China
+Southern China;Wu Yuke;11911319;Male;21;Southern China
+Southern China;Li Jingwen;11811618;Male;22;Southern China
+Asia;Stewart Jones;12011126;Male;20;Asia
+Eastern China;Shui Yihan;11612710;Female;24;Eastern China
+Eastern China;Chu Wenming;12012809;Male;20;Eastern China
+Northern China;Cao Hanming;12011206;Male;20;Northern China
+Northern China;Yan Conglei;11411014;Female;26;Northern China
+Asia;June Hall;11212228;Female;28;Asia
+Southern China;Kong Shanwei;12111303;Female;19;Southern China
+Southern China;Qian Junqin;11112406;Male;29;Southern China
+Southern China;Lv Jiamin;11112214;Male;29;Southern China
+Southern China;Zhou Lewen;12110502;Male;19;Southern China
+Southern China;Yan Shilan;11810712;Female;22;Southern China
+Southern China;Wang Jiayu;11311904;Male;27;Southern China
+Southern China;Han Yuzhou;11810727;Male;22;Southern China
+Southern China;Lv Xinyue;11212025;Male;28;Southern China
+Southern China;Xu Shiyun;11110325;Female;29;Southern China
+Northern China;You Jingyun;11511007;Male;25;Northern China
+Northern China;Cao Feilei;12111027;Female;19;Northern China
+Southern China;Lv Jianrong;11312113;Male;27;Southern China
+Southern China;Yang Feining;11311326;Female;27;Southern China
+Southern China;Yan Rongchun;11310908;Male;27;Southern China
+Northern China;Wei Xiaoshan;11810204;Female;22;Northern China
+Northern China;Xu Yuanhong;11112611;Male;29;Northern China
+Northern China;Cao Yueqi;11911416;Male;21;Northern China
+Northern China;Han  qizhen;11511019;Female;25;Northern China
+Northern China;Zhu Yunzhi;12212520;Male;18;Northern China
+Northern China;Wang Feifeng;11611812;Female;24;Northern China
+Southern China;Qian Bochang;11310722;Male;27;Southern China
+Southern China;Shen Tianfan;11810110;Female;22;Southern China
+Southern China;Kong Xiangzhe;11810719;Male;22;Southern China
+Southern China;Xu  menghan;11711207;Female;23;Southern China
+Southern China;Jing Jishan;11411022;Female;26;Southern China
+Southern China;Qian Yaxia;11312522;Female;27;Southern China
+Southern China;Tao Bochang;11811908;Male;22;Southern China
+Eastern China;Sun Yankun;11710812;Male;23;Eastern China
+Eastern China;Zheng Zibin;11810907;Male;22;Eastern China
+Eastern China;Zhu Yiye;11111203;Male;29;Eastern China
+Eastern China;You Taian;11310827;Male;27;Eastern China
+Eastern China;Shui Mengbai;11111801;Female;29;Eastern China
+Eastern China;Cao Ruyu;11411127;Male;26;Eastern China
+Asia;Leila Smith;11410413;Female;26;Asia
+Northern China;Yang Zhengkai;12210019;Male;18;Northern China
+Northern China;Yang Jingwen;11912109;Male;21;Northern China
+Eastern China;Chu Qiuman;11711516;Female;23;Eastern China
+Southern China;Jiang Yibo;11110502;Female;29;Southern China
+Southern China;Han Chenjia;11811626;Male;22;Southern China
+Southern China;Zou Youling;12011525;Female;20;Southern China
+Southern China;Yan Linghai;11711129;Female;23;Southern China
+Southern China;Wu Fanrui;11410806;Male;26;Southern China
+Asia;Dora Thompson;12012028;Female;20;Asia
+Northern China;Bai Jingping;11711304;Female;23;Northern China
+Southern China;Xu Dongqing;11111906;Female;29;Southern China
+Southern China;Hua Yizhen;11210921;Female;28;Southern China
+Asia;Joanne White;11112718;Female;29;Asia
+Eastern China;Shen Mingliang;11210513;Male;28;Eastern China
+Eastern China;Liu Mengbai;12212112;Female;18;Eastern China
+Eastern China;He Pengxiao;11410208;Male;26;Eastern China
+Southern China;Jiang Jingwen;11611029;Male;24;Southern China
+Southern China;Xu Hanxuan;12212302;Female;18;Southern China
+Southern China;Bai Yingtian;11710903;Female;23;Southern China
+Southern China;Zhang Mimei;11411716;Female;26;Southern China
+Southern China;Shen Yuzhou;12210904;Male;18;Southern China
+Southern China;Wei Zhuodong;12111620;Male;19;Southern China
+Southern China;Zou Muman;12011005;Female;20;Southern China
+Southern China;Tao Xixia;11411217;Female;26;Southern China
+Southern China;Liu Jinquan;11410326;Male;26;Southern China
+Southern China;Yan Ningyang;11510005;Female;25;Southern China
+Southern China;Xu Qintao;11412110;Male;26;Southern China
+Southern China;Jing Qize;12112114;Male;19;Southern China
+Southern China;Kong Qiaobai;12112222;Female;19;Southern China
+Southern China;Jiang Lengrou;11510629;Female;25;Southern China
+Southern China;Wei Ruichen;11310514;Male;27;Southern China
+Southwestern China;Jiang Yixuan;11711321;Male;23;Southwestern China
+Eastern China;Shui Rusi;11410708;Female;26;Eastern China
+Southern China;Qi Yishan;12110728;Male;19;Southern China
+Southern China;Shen Jinquan;12112115;Male;19;Southern China
+Southern China;Tao Yishan;11611408;Female;24;Southern China
+Southern China;Jing Binzhu;11410313;Male;26;Southern China
+Southern China;Dou Youtong;12112827;Male;19;Southern China
+Southern China;He Yukun;11210611;Male;28;Southern China
+Asia;Tommy Davies;11110313;Male;29;Asia
+Southern China;Kong Maoan;11410027;Male;26;Southern China
+Eastern China;Zheng Manlv;11812319;Female;22;Eastern China
+Eastern China;Shi Binggan;11511914;Male;25;Eastern China
+Eastern China;You Xiangxing;11812905;Male;22;Eastern China
+Eastern China;Qing Muhao;11812226;Male;22;Eastern China
+Eastern China;Qian Qianyi;11812011;Female;22;Eastern China
+Eastern China;Yan Yusong;11412919;Female;26;Eastern China
+Eastern China;Qian Yuanxiang;11510606;Male;25;Eastern China
+Eastern China;Wu Ruyu;11211012;Male;28;Eastern China
+Eastern China;Chen Xiangman;11610012;Female;24;Eastern China
+Eastern China;Zhou Yihao;11411506;Male;26;Eastern China
+Eastern China;Wang Chumei;12210114;Female;18;Eastern China
+Eastern China;Shen Lisheng;11612606;Male;24;Eastern China
+Northern China;Yu Yixian;11512521;Male;25;Northern China
+Southern China;Xu Nuobo;11410007;Male;26;Southern China
+Northern China;Yan Yingzhi;11512220;Female;25;Northern China
+Southern China;Wei Yangyang;11610603;Male;24;Southern China
+Southwestern China;Yu Qizheng;11812213;Male;22;Southwestern China
+Southwestern China;Sun Yinger;11910404;Female;21;Southwestern China
+Southwestern China;Jiang Weian;11110209;Male;29;Southwestern China
+Eastern China;He Ruoyun;12112420;Female;19;Eastern China
+Eastern China;Xu Ruichen;11110923;Male;29;Eastern China
+Eastern China;Zhou Huiran;12111125;Male;19;Eastern China
+Eastern China;Lv Yunzhi;11311914;Male;27;Eastern China
+Eastern China;Zhao Yuxuan;12012001;Male;20;Eastern China
+Eastern China;Zhu Hanxuan;12012712;Female;20;Eastern China
+Eastern China;Zou Linshan;12111022;Male;19;Eastern China
+Eastern China;Chu Linchuan;11311115;Male;27;Eastern China
+Eastern China;Jing Nianlan;11210928;Female;28;Eastern China
+Eastern China;Qian Yupeng;12210320;Male;18;Eastern China
+Eastern China;Hua Cailing;11710900;Female;23;Eastern China
+Eastern China;Han Anxuan;11912220;Female;21;Eastern China
+Eastern China;Zou Youyi;12111519;Female;19;Eastern China
+Eastern China;Feng Runbin;11411706;Male;26;Eastern China
+Eastern China;Bai Chutai;11710729;Male;23;Eastern China
+Eastern China;Yan Zicheng;11310924;Male;27;Eastern China
+Southern China;Zou Xintao;11411211;Male;26;Southern China
+Southern China;Yang  zixue;11112716;Female;29;Southern China
+Northern China;Kong Nianyang;11912112;Female;21;Northern China
+Northern China;Hua Zhuodong;11312223;Male;27;Northern China
+Southern China;He Qizhen;11811901;Female;22;Southern China
+Southern China;Jing Shiyi;11110226;Male;29;Southern China
+Southern China;Wei Bingzhi;12210821;Male;18;Southern China
+Southern China;He Huaibai;11210316;Female;28;Southern China
+Southern China;Han Peixiang;11411326;Female;26;Southern China
+Southern China;Chen Yuanjun;12210926;Male;18;Southern China
+Southwestern China;Qian Yukun;12011706;Male;20;Southwestern China
+Southwestern China;Zhou Qimei;11411124;Female;26;Southwestern China
+Southern China;He Leshuang;11111024;Female;29;Southern China
+Southern China;He Hanan;11810014;Female;22;Southern China
+Southern China;Sun Haoyan;11912616;Male;21;Southern China
+Southern China;Qing Yousong;12111607;Female;19;Southern China
+Eastern China;Sun Shizhen;11211915;Female;28;Eastern China
+Eastern China;Zheng Rongchun;11510812;Male;25;Eastern China
+Southern China;Tao Zhiyong;11210219;Male;28;Southern China
+Southern China;Jiang Yingzhi;11811718;Female;22;Southern China
+Southern China;Yu Shuzhen;11211904;Female;28;Southern China
+Eastern China;Zhang Runyi;11910127;Male;21;Eastern China
+Southern China;Qian Yuyang;12210916;Female;18;Southern China
+Southern China;Shen Zhengsong;12112013;Male;19;Southern China
+Eastern China;Shen Shitong;12112802;Female;19;Eastern China
+Eastern China;Zhang Yousong;11412615;Female;26;Eastern China
+Eastern China;Dou Yunshuo;11111829;Male;29;Eastern China
+Northern China;Jiang Tingping;12012726;Female;20;Northern China
+Eastern China;Yu Ruichen;11110410;Male;29;Eastern China
+Eastern China;Sun Ruyu;11511728;Male;25;Eastern China
+Eastern China;Zhang Benqing;12210029;Male;18;Eastern China
+Southern China;Tao Ercui;12111202;Female;19;Southern China
+Southwestern China;Han Hengran;11411320;Male;26;Southwestern China
+Southwestern China;Lv Shizhen;11511902;Female;25;Southwestern China
+Southwestern China;Hua Siyu;11112503;Male;29;Southwestern China
+Southwestern China;Chen Yueqi;11512800;Male;25;Southwestern China
+Southwestern China;Kong Pinglv;11711716;Female;23;Southwestern China
+Southwestern China;Wei Yingtian;11811816;Female;22;Southwestern China
+Eastern China;Sun Tianlan;11910725;Female;21;Eastern China
+Eastern China;Qing Canning;11911411;Male;21;Eastern China
+Eastern China;Xu Bingzhi;12011115;Male;20;Eastern China
+Southwestern China;Zhu Rufeng;11311510;Female;27;Southwestern China
+Southwestern China;Qian Yiyu;11912900;Female;21;Southwestern China
+Southwestern China;Zhou Yaokun;11312823;Male;27;Southwestern China
+Southwestern China;Jing Muhua;12211621;Male;18;Southwestern China
+Southwestern China;Qi Gulian;11712400;Female;23;Southwestern China
+Southwestern China;You Boran;11711218;Male;23;Southwestern China
+Southwestern China;Li Lewen;11611225;Male;24;Southwestern China
+Southwestern China;Zou Zhidie;11611117;Female;24;Southwestern China
+Southwestern China;Qian Qianqiu;11710621;Female;23;Southwestern China
+Southwestern China;Zhou Huanqing;11911206;Female;21;Southwestern China
+Southwestern China;Shi Runyi;11210628;Male;28;Southwestern China
+Southwestern China;Qi Yinxiang;12210722;Male;18;Southwestern China
+Eastern China;He Banxiang;11211615;Female;28;Eastern China
+Eastern China;Xu Zhuyu;11610802;Male;24;Eastern China
+Eastern China;Yang Hanzhe;11612023;Male;24;Eastern China
+Eastern China;Yang Manyun;11311818;Female;27;Eastern China
+Eastern China;Xu Honglin;11111703;Male;29;Eastern China
+Eastern China;Jiang Rusi;11210524;Female;28;Eastern China
+Eastern China;Shui Nuobo;12111922;Male;19;Eastern China
+Eastern China;Wang Mucheng;11210307;Male;28;Eastern China
+Eastern China;Zhou Canqi;11912729;Male;21;Eastern China
+Eastern China;Tao Chengjun;11210724;Male;28;Eastern China
+Eastern China;Zheng Jingyun;12212519;Male;18;Eastern China
+Eastern China;Kong Yishan;12011017;Male;20;Eastern China
+Eastern China;Chen Hanfeng;11711517;Female;23;Eastern China
+Southwestern China;Qing Jingping;11810008;Female;22;Southwestern China
+Southwestern China;Qi Jiabin;11210706;Male;28;Southwestern China
+Southern China;Zou Huasheng;11411213;Male;26;Southern China
+Eastern China;Zhang  biqin;11710100;Female;23;Eastern China
+Eastern China;Qing Chumei;11310711;Female;27;Eastern China
+Eastern China;Sun Jiaxuan;12110710;Male;19;Eastern China
+Eastern China;Shen Yangchen;11410600;Male;26;Eastern China
+Eastern China;Qing Pingning;12212516;Female;18;Eastern China
+Eastern China;Xu Dongsi;11410915;Female;26;Eastern China
+Southern China;Zou Banqin;11910808;Female;21;Southern China
+Southern China;Qian Shunhang;11510516;Male;25;Southern China
+Southern China;Liu Wenjing;11812101;Male;22;Southern China
+Eastern China;Yan Yuanxiang;11610809;Male;24;Eastern China
+Eastern China;Cao Zicheng;11410907;Male;26;Eastern China
+Southern China;Wei Youman;11710213;Female;23;Southern China
+Eastern China;Yu Chutai;11110407;Male;29;Eastern China
+Eastern China;Xie Jiafu;11211902;Male;28;Eastern China
+Southern China;Tao Shuxuan;11111424;Female;29;Southern China
+Eastern China;Yu Huasheng;11711115;Male;23;Eastern China
+Eastern China;Zhu Yuanchun;11310220;Female;27;Eastern China
+Eastern China;Chu Runyi;11410122;Male;26;Eastern China
+Eastern China;Sun Wenyan;11412417;Female;26;Eastern China
+Eastern China;Zhu Honglin;11210312;Male;28;Eastern China
+Eastern China;Shi Hongbang;11811124;Male;22;Eastern China
+Eastern China;Kong Xiaocui;12010920;Female;20;Eastern China
+Southern China;Jing Ziyan;11812908;Male;22;Southern China
+Eastern China;Wang Lisheng;11311223;Male;27;Eastern China
+Southern China;Bai Ermei;11111609;Female;29;Southern China
+Southern China;Kong Yuandong;11610829;Female;24;Southern China
+Southwestern China;Shi Tingping;12111228;Female;19;Southwestern China
+Southwestern China;Zhou Zhuodong;11512607;Male;25;Southwestern China
+Southwestern China;Xie Ercui;11412600;Female;26;Southwestern China
+Southwestern China;Kong Xumeng;11510129;Male;25;Southwestern China
+Southwestern China;Han Haizhen;11311306;Female;27;Southwestern China
+Southwestern China;You Qiaoqing;11212203;Female;28;Southwestern China
+Eastern China;Jiang Jiaji;12111524;Male;19;Eastern China
+Eastern China;Zhang Binzhu;11711509;Male;23;Eastern China
+Eastern China;Zhang Miaorui;11610903;Male;24;Eastern China
+Eastern China;Chen Ziquan;11112317;Male;29;Eastern China
+Eastern China;Yang Baitao;11111206;Female;29;Eastern China
+Eastern China;Kong Aonan;11512419;Female;25;Eastern China
+Eastern China;Bai Hanzhe;11912012;Male;21;Eastern China
+Eastern China;Shi Guzhu;11911722;Female;21;Eastern China
+Southwestern China;You Ruoke;11612314;Male;24;Southwestern China
+Southwestern China;Shui Huaiyun;12012601;Female;20;Southwestern China
+Southwestern China;Xie Wenyan;11512702;Female;25;Southwestern China
+Southwestern China;Shen Haifeng;12211729;Female;18;Southwestern China
+Southwestern China;Yang Guqiu;11911407;Female;21;Southwestern China
+Southwestern China;Qian Linghan;12112206;Female;19;Southwestern China
+Eastern China;Qing Benqing;11511421;Male;25;Eastern China
+Eastern China;Li Benqing;11111624;Male;29;Eastern China
+Eastern China;Wei Shiyi;11311313;Male;27;Eastern China
+Southwestern China;Qian Jishan;11410411;Female;26;Southwestern China
+Southwestern China;Chu Guqiu;12212528;Female;18;Southwestern China
+Southwestern China;He Yihao;12011011;Male;20;Southwestern China
+Eastern China;Xu Yishan;11612829;Male;24;Eastern China
+Eastern China;Xu Jiashu;12010216;Male;20;Eastern China
+Eastern China;He Hanxiang;12010024;Male;20;Eastern China
+Eastern China;Qian Banxiang;12112920;Female;19;Eastern China
+Southwestern China;Xie Tingqin;11610322;Female;24;Southwestern China
+Southern China;Zhang Zhixiang;11411810;Male;26;Southern China
+Eastern China;Qing  zixue;12212622;Female;18;Eastern China
+Eastern China;Chen Haoyan;11310607;Male;27;Eastern China
+Eastern China;Chen Jiashuai;12111814;Male;19;Eastern China
+Eastern China;Chen Chenjia;11911913;Male;21;Eastern China
+Eastern China;Jing Yishan;12012023;Female;20;Eastern China
+Eastern China;You Qicheng;11110306;Male;29;Eastern China
+Eastern China;Hua Zhaoyu;11210013;Male;28;Eastern China
+Southwestern China;Zhou Miyan;12211926;Female;18;Southwestern China
+Southwestern China;Yu Haonan;12210804;Male;18;Southwestern China
+Southwestern China;Xie Pingning;11712725;Female;23;Southwestern China
+Southwestern China;Chen Jiabin;11410308;Male;26;Southwestern China
+Southwestern China;Zhao Yankun;11412126;Male;26;Southwestern China
+Southwestern China;Dou Wanzhi;11210923;Female;28;Southwestern China
+Southwestern China;He Yuke;11411011;Male;26;Southwestern China
+Southwestern China;You Shaohu;11911822;Male;21;Southwestern China
+Southwestern China;Liu Miaorui;12011102;Male;20;Southwestern China
+Eastern China;Zhao Yihao;12012128;Male;20;Eastern China
+Southwestern China;Shen Mengbai;11910305;Female;21;Southwestern China
+Southwestern China;He Xinyue;12110813;Male;19;Southwestern China
+Southwestern China;Chu Jingwen;12111726;Male;19;Southwestern China
+Southwestern China;Jiang Fanrui;11412215;Male;26;Southwestern China
+Southwestern China;Zou Muxue;11410104;Female;26;Southwestern China
+Southwestern China;Qian Jiaxuan;12211323;Male;18;Southwestern China
+Eastern China;Shi Zhuodong;11910007;Male;21;Eastern China
+Southwestern China;Zheng Lvping;11712901;Female;23;Southwestern China
+Southwestern China;Zhu Tinghan;11612201;Female;24;Southwestern China
+Southwestern China;Zhu Weian;11211004;Male;28;Southwestern China
+Southwestern China;He Ruixun;11212015;Male;28;Southwestern China
+Southwestern China;Tao Manrui;11712513;Male;23;Southwestern China
+Southwestern China;Bai Rusi;11210225;Female;28;Southwestern China
+Southwestern China;Shi Wenming;11112303;Male;29;Southwestern China
+Southwestern China;Tao Yibo;12210416;Female;18;Southwestern China
+Southwestern China;Wu Xiangchen;11510914;Male;25;Southwestern China
+Southwestern China;Zhou Yanbai;12012818;Female;20;Southwestern China
+Southwestern China;Chen Nianer;12212709;Female;18;Southwestern China
+Southwestern China;Yan Shumeng;12210614;Female;18;Southwestern China
+Southwestern China;Shui Ruoyan;11610619;Female;24;Southwestern China
