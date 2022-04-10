@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.Properties;
 //import java.net.URL;
 
-public class import_enterprise {
+public class ImportEnterprise {
     private static final int BATCH_SIZE = 500;
 //    private static URL propertyURL = GoodLoader.class
 //        .getResource("/loader.cnf");

@@ -95,18 +95,32 @@ public class DatabaseManipulation implements DataManipulation {
 
     @Override
     public String selectOrderById(int id) {
+        StringBuilder stringBuilder = new StringBuilder();
         String sql = "select * from orders where order_id = ?";
         try {
             PreparedStatement preparedStatement = con.prepareStatement(sql);
             preparedStatement.setInt(1, id);
             resultSet = preparedStatement.executeQuery();
-//            while (resultSet.next()) {
-//                stringBuilder.append(resultSet.getString("continent")).append("\n");
-//            }
+            while (resultSet.next()) {
+                stringBuilder.append("order_id: ").append(resultSet.getString("order_id"))
+                    .append("\n");
+                stringBuilder.append("estimated_delivery_date: ")
+                    .append(resultSet.getString("estimated_delivery_date")).append("\n");
+                stringBuilder.append("lodgement_date: ")
+                    .append(resultSet.getString("lodgement_date")).append("\n");
+                stringBuilder.append("quantity: ").append(resultSet.getString("quantity"))
+                    .append("\n");
+                stringBuilder.append("salesman: ").append(resultSet.getString("salesman_id"))
+                    .append("\n");
+                stringBuilder.append("model_id: ").append(resultSet.getString("model_id"))
+                    .append("\n");
+                stringBuilder.append("contract_number: ")
+                    .append(resultSet.getString("contract_number")).append("\n");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return resultSet.toString();
+        return stringBuilder.toString();
     }
 
     @Override
@@ -133,7 +147,7 @@ public class DatabaseManipulation implements DataManipulation {
             preparedStatement.setDate(2, dateLog);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                stringBuilder.append(resultSet.getString("order_id")).append(", ");
+                stringBuilder.append(resultSet.getString("order_id")).append("\n");
             }
         } catch (SQLException | ParseException e) {
             e.printStackTrace();
@@ -144,7 +158,7 @@ public class DatabaseManipulation implements DataManipulation {
     @Override
     public String selectContractOfEnterById(int id) {
         String res = "";
-        String sql = "select ce.name from orders " +
+        String sql = "select ce.name as nm from orders " +
             "join contracts c on c.contract_number = orders.contract_number " +
             "join client_enterprises ce on ce.client_enterprise_id = c.client_enterprise_id " +
             "where order_id = ?";
@@ -153,7 +167,7 @@ public class DatabaseManipulation implements DataManipulation {
             preparedStatement.setInt(1, id);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                res = resultSet.getString("ce.name");
+                res = resultSet.getString("nm");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -175,7 +189,9 @@ public class DatabaseManipulation implements DataManipulation {
             PreparedStatement preparedStatement = con.prepareStatement(sql);
             preparedStatement.setInt(1, id);
             resultSet = preparedStatement.executeQuery();
-            res = resultSet.getString("ors");
+            while (resultSet.next()) {
+                res = resultSet.getString("ors");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -185,7 +201,7 @@ public class DatabaseManipulation implements DataManipulation {
     @Override
     public int deleteById(int id) {
         int res = 0;
-        String sql = "delete orders where order_id = ?";
+        String sql = "delete from orders where order_id = ?";
         try {
             PreparedStatement preparedStatement = con.prepareStatement(sql);
             preparedStatement.setInt(1, id);
@@ -197,17 +213,26 @@ public class DatabaseManipulation implements DataManipulation {
     }
 
     @Override
-    public int updateLogById(int id, Date date) {
+    public int updateLogById(int id, String date) {
         int res = 0;
         String sql = "update orders " +
             "set lodgement_date = ? " +
             "where order_id = ?";
         try {
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            java.util.Date d = null;
+            if (date == null)
+                return 0;
+            d = format.parse(date);
+            assert d != null;
+            Date goal = new Date(d.getTime());
             PreparedStatement preparedStatement = con.prepareStatement(sql);
-            preparedStatement.setDate(1, date);
+            preparedStatement.setDate(1, goal);
             preparedStatement.setInt(2, id);
             res = preparedStatement.executeUpdate();
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
             e.printStackTrace();
         }
         return res;

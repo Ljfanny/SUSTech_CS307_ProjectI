@@ -3,11 +3,15 @@ package proj.one;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
-import java.sql.*;
 //import java.net.URL;
 
-public class import_mobile {
+public class ImportDirector {
     private static final int BATCH_SIZE = 500;
 //    private static URL propertyURL = GoodLoader.class
 //        .getResource("/loader.cnf");
@@ -44,8 +48,8 @@ public class import_mobile {
         }
         try {
             stmt = con.prepareStatement(
-                "insert into mobile_phones(salesman_id, phone_number)"
-                    + " values((select salesman_id from salesmen where salesman_number = ?),?)");
+                "insert into directors(surname, first_name)"
+                    + " values(?,?)");
         } catch (SQLException e) {
             System.err.println("Insert statement failed");
             System.err.println(e.getMessage());
@@ -68,12 +72,12 @@ public class import_mobile {
         }
     }
 
-    private static void loadData(String id, String phone)
+    private static void loadData(String surname, String first_name)
         throws SQLException {
         if (con != null) {
             try {
-                stmt.setString(1, id);
-                stmt.setString(2, phone);
+                stmt.setString(1, surname);
+                stmt.setString(2, first_name);
                 stmt.addBatch();
             } catch (Exception e) {
                 System.out.println(e);
@@ -128,8 +132,8 @@ public class import_mobile {
             long end;
             String line;
             String[] parts;
-            String sales_num;
-            String sales_phone_num;
+            String sur;
+            String fir;
             int cnt = 0;
             // Empty target table
             openDB(prop.getProperty("host"), prop.getProperty("database"),
@@ -148,9 +152,15 @@ public class import_mobile {
             while ((line = infile.readLine()) != null) {
                 parts = line.split(";");
                 if (parts.length > 1) {
-                    sales_num = parts[0];
-                    sales_phone_num = parts[1];
-                    loadData(sales_num, sales_phone_num);
+                    String[] temp = parts[1].split(" ");
+                    if (parts[0].contains("China")) {
+                        sur = temp[0];
+                        fir = temp[1];
+                    } else {
+                        sur = temp[1];
+                        fir = temp[0];
+                    }
+                    loadData(sur, fir);
                     cnt++;
                     if (cnt % BATCH_SIZE == 0) {
                         stmt.executeBatch();

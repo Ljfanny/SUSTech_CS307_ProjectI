@@ -10,10 +10,11 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import java.util.Objects;
 import java.util.Properties;
 //import java.net.URL;
 
-public class import_contract {
+public class ImportOrder {
     private static final int BATCH_SIZE = 500;
 //    private static URL propertyURL = GoodLoader.class
 //        .getResource("/loader.cnf");
@@ -50,9 +51,10 @@ public class import_contract {
         }
         try {
             stmt = con.prepareStatement(
-                "insert into contracts(contract_number,contract_date, client_enterprise_id)"
+                "insert into orders(estimated_delivery_date, Lodgement_date, quantity, salesman_id, model_id, contract_number)"
                     +
-                    " values(?,?,(select client_enterprise_id from client_enterprises where name = ?))");
+                    " values(?,?,?,(select salesman_id from salesmen where salesman_number = ?)," +
+                    "(select model_id from models where product_model = ?),?)");
         } catch (SQLException e) {
             System.err.println("Insert statement failed");
             System.err.println(e.getMessage());
@@ -75,13 +77,18 @@ public class import_contract {
         }
     }
 
-    private static void loadData(String num, Date date, String enter)
+    private static void loadData(Date estimated_delivery_date, Date lodgement_date,
+                                 int quantity, String number, String pro_model,
+                                 String contract_number)
         throws SQLException {
         if (con != null) {
             try {
-                stmt.setString(1, num);
-                stmt.setDate(2, date);
-                stmt.setString(3, enter);
+                stmt.setDate(1, estimated_delivery_date);
+                stmt.setDate(2, lodgement_date);
+                stmt.setInt(3, quantity);
+                stmt.setString(4, number);
+                stmt.setString(5, pro_model);
+                stmt.setString(6, contract_number);
                 stmt.addBatch();
             } catch (Exception e) {
                 System.out.println(e);
@@ -136,8 +143,6 @@ public class import_contract {
             long end;
             String line;
             String[] parts;
-            String sur;
-            String fir;
             int cnt = 0;
             // Empty target table
             openDB(prop.getProperty("host"), prop.getProperty("database"),
@@ -145,7 +150,8 @@ public class import_contract {
             Statement stmt0;
             if (con != null) {
                 stmt0 = con.createStatement();
-//                stmt0.execute("truncate table mobile_phone");
+                stmt0.execute("truncate table orders");
+                stmt0.execute("alter table orders disable trigger all");
                 stmt0.close();
             }
             closeDB();
@@ -157,15 +163,23 @@ public class import_contract {
                 parts = line.split(";");
                 if (parts.length > 1) {
                     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-                    java.util.Date d = null;
+                    java.util.Date d1 = null;
+                    java.util.Date d2 = null;
                     try {
-                        d = format.parse(parts[1]);
+                        d1 = format.parse(parts[0]);
+                        if (!Objects.equals(parts[1], "")) {
+                            d2 = format.parse(parts[1]);
+                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    assert d != null;
-                    Date rig = new Date(d.getTime());
-                    loadData(parts[0], rig, parts[2]);
+                    assert d1 != null;
+                    Date rig1 = new Date(d1.getTime());
+                    Date rig2 = null;
+                    if (d2 != null) {
+                        rig2 = new Date(d2.getTime());
+                    }
+                    loadData(rig1, rig2, Integer.parseInt(parts[2]), parts[3], parts[4], parts[5]);
                     cnt++;
                     if (cnt % BATCH_SIZE == 0) {
                         stmt.executeBatch();

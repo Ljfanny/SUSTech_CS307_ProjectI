@@ -3,15 +3,11 @@ package proj.one;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Properties;
+import java.sql.*;
 //import java.net.URL;
 
-public class import_supplier {
+public class ImportMobile {
     private static final int BATCH_SIZE = 500;
 //    private static URL propertyURL = GoodLoader.class
 //        .getResource("/loader.cnf");
@@ -48,9 +44,8 @@ public class import_supplier {
         }
         try {
             stmt = con.prepareStatement(
-                "insert into supply_centers(supply_center, director_id)"
-                    +
-                    " values(?,(select director_id from directors where surname = ? and first_name = ?))");
+                "insert into mobile_phones(salesman_id, phone_number)"
+                    + " values((select salesman_id from salesmen where salesman_number = ?),?)");
         } catch (SQLException e) {
             System.err.println("Insert statement failed");
             System.err.println(e.getMessage());
@@ -73,13 +68,12 @@ public class import_supplier {
         }
     }
 
-    private static void loadData(String supplier, String surname, String first_name)
+    private static void loadData(String id, String phone)
         throws SQLException {
         if (con != null) {
             try {
-                stmt.setString(1, supplier);
-                stmt.setString(2, surname);
-                stmt.setString(3, first_name);
+                stmt.setString(1, id);
+                stmt.setString(2, phone);
                 stmt.addBatch();
             } catch (Exception e) {
                 System.out.println(e);
@@ -134,8 +128,8 @@ public class import_supplier {
             long end;
             String line;
             String[] parts;
-            String sur;
-            String fir;
+            String sales_num;
+            String sales_phone_num;
             int cnt = 0;
             // Empty target table
             openDB(prop.getProperty("host"), prop.getProperty("database"),
@@ -154,15 +148,9 @@ public class import_supplier {
             while ((line = infile.readLine()) != null) {
                 parts = line.split(";");
                 if (parts.length > 1) {
-                    String[] temp = parts[0].split(" ");
-                    if (parts[1].contains("China")) {
-                        sur = temp[0];
-                        fir = temp[1];
-                    } else {
-                        sur = temp[1];
-                        fir = temp[0];
-                    }
-                    loadData(parts[1], sur, fir);
+                    sales_num = parts[0];
+                    sales_phone_num = parts[1];
+                    loadData(sales_num, sales_phone_num);
                     cnt++;
                     if (cnt % BATCH_SIZE == 0) {
                         stmt.executeBatch();

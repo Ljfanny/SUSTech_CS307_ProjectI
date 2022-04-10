@@ -23,6 +23,6 @@ public interface DataManipulation {
     public int deleteById(int id);
 
     //update
-    public int updateLogById(int id, Date date);
+    public int updateLogById(int id, String date);
 
 }

@@ -7,7 +7,7 @@ import java.util.Properties;
 import java.sql.*;
 //import java.net.URL;
 
-public class import_salesman {
+public class ImportSalesman {
     private static final int BATCH_SIZE = 500;
 //    private static URL propertyURL = GoodLoader.class
 //        .getResource("/loader.cnf");

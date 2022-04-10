@@ -7,7 +7,7 @@ import java.util.Properties;
 import java.sql.*;
 //import java.net.URL;
 
-public class import_model {
+public class ImportProduct {
     private static final int BATCH_SIZE = 500;
 //    private static URL propertyURL = GoodLoader.class
 //        .getResource("/loader.cnf");
@@ -43,8 +43,8 @@ public class import_model {
         }
         try {
             stmt = con.prepareStatement(
-                "insert into models(product_model,unit_price,product_code)"
-                    + " values(?,?,?)");
+                "insert into products(product_code,product_name)"
+                    + " values(?,?)");
         } catch (SQLException e) {
             System.err.println("Insert statement failed");
             System.err.println(e.getMessage());
@@ -67,13 +67,12 @@ public class import_model {
         }
     }
 
-    private static void loadData(String code, String name, int price)
+    private static void loadData(String code, String name)
         throws SQLException {
         if (con != null) {
             try {
-                stmt.setString(1, name);
-                stmt.setInt(2, price);
-                stmt.setString(3, code);
+                stmt.setString(1, code);
+                stmt.setString(2, name);
                 stmt.addBatch();
             } catch (Exception e) {
                 System.out.println(e);
@@ -130,8 +129,7 @@ public class import_model {
             String line;
             String[] parts;
             String pro_code;
-            String model_name;
-            int unit_price;
+            String pro_name;
             int cnt = 0;
             // Empty target table
             openDB(prop.getProperty("host"), prop.getProperty("database"),
@@ -150,10 +148,9 @@ public class import_model {
             while ((line = infile.readLine()) != null) {
                 parts = line.split(";");
                 if (parts.length > 1) {
-                    model_name = parts[0];
-                    unit_price = Integer.parseInt(parts[1]);
-                    pro_code = parts[2];
-                    loadData(pro_code, model_name, unit_price);
+                    pro_code = parts[0];
+                    pro_name = parts[1];
+                    loadData(pro_code,pro_name);
                     cnt++;
                     if (cnt % BATCH_SIZE == 0) {
                         stmt.executeBatch();
@@ -194,3 +191,4 @@ public class import_model {
         closeDB();
     }
 }
+

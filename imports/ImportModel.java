@@ -3,22 +3,17 @@ package proj.one;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Properties;
+import java.sql.*;
 //import java.net.URL;
 
-public class import_director {
+public class ImportModel {
     private static final int BATCH_SIZE = 500;
 //    private static URL propertyURL = GoodLoader.class
 //        .getResource("/loader.cnf");
 
     private static Connection con = null;
     private static PreparedStatement stmt = null;
-    private static PreparedStatement sid = null;
     private static boolean verbose = false;
 
     private static void openDB(String host, String dbname,
@@ -48,8 +43,8 @@ public class import_director {
         }
         try {
             stmt = con.prepareStatement(
-                "insert into directors(surname, first_name)"
-                    + " values(?,?)");
+                "insert into models(product_model,unit_price,product_code)"
+                    + " values(?,?,?)");
         } catch (SQLException e) {
             System.err.println("Insert statement failed");
             System.err.println(e.getMessage());
@@ -72,16 +67,18 @@ public class import_director {
         }
     }
 
-    private static void loadData(String surname, String first_name)
+    private static void loadData(String code, String name, int price)
         throws SQLException {
         if (con != null) {
             try {
-                stmt.setString(1, surname);
-                stmt.setString(2, first_name);
+                stmt.setString(1, name);
+                stmt.setInt(2, price);
+                stmt.setString(3, code);
                 stmt.addBatch();
             } catch (Exception e) {
                 System.out.println(e);
             }
+
         }
     }
 
@@ -132,8 +129,9 @@ public class import_director {
             long end;
             String line;
             String[] parts;
-            String sur;
-            String fir;
+            String pro_code;
+            String model_name;
+            int unit_price;
             int cnt = 0;
             // Empty target table
             openDB(prop.getProperty("host"), prop.getProperty("database"),
@@ -141,7 +139,7 @@ public class import_director {
             Statement stmt0;
             if (con != null) {
                 stmt0 = con.createStatement();
-//                stmt0.execute("truncate table mobile_phone");
+//                stmt0.execute("truncate table salesmen");
                 stmt0.close();
             }
             closeDB();
@@ -152,15 +150,10 @@ public class import_director {
             while ((line = infile.readLine()) != null) {
                 parts = line.split(";");
                 if (parts.length > 1) {
-                    String[] temp = parts[1].split(" ");
-                    if (parts[0].contains("China")) {
-                        sur = temp[0];
-                        fir = temp[1];
-                    } else {
-                        sur = temp[1];
-                        fir = temp[0];
-                    }
-                    loadData(sur, fir);
+                    model_name = parts[0];
+                    unit_price = Integer.parseInt(parts[1]);
+                    pro_code = parts[2];
+                    loadData(pro_code, model_name, unit_price);
                     cnt++;
                     if (cnt % BATCH_SIZE == 0) {
                         stmt.executeBatch();
@@ -201,4 +194,3 @@ public class import_director {
         closeDB();
     }
 }
-
