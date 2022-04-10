@@ -8,15 +8,11 @@
 | Student ID   | 12011543 | 12011906 |
 | Lab session  | Lab 2    | Lab      |
 
-
-
 ## Part 1 E-R Diagram
 
 ![](ER图.png)
 
-This Diagram is made with ProcessOn(www.processon.com).
-
-
+This Diagram is made with [ProcessOn](www.processon.com).
 
 ## Part 2 Database Design
 
@@ -37,8 +33,6 @@ We used the E-R model to design database. Since there are no many-to-many relati
 - products: In this table, there are products' codes as primary key and their names.
 - models: In this table, there are models' names(unique) and their corresponding prices and codes, with the serial primary key model_id.
 - orders: In this table, there are estimated delivery dates, lodgement dates, quantities of orders, and foreign keys of salesman_id, model_id, contract_number to indicate order's subordination to them, with the serial primary key order_id.
-
-
 
 ## Part 3 Data Import
 
@@ -258,7 +252,7 @@ public class import_order {
 
 #### Description
 
-
+> A description of how you use the script to import data. You should clearly state the steps, necessary prerequisites, and cautions in order to run the script and import data correctly.
 
 ### Comparative analysis of computational efficiencies between different ways in importing
 
@@ -282,4 +276,47 @@ The table below shows the screenshots of the output results.
 |   5   |    ![good](good.png)    |
 |   6   |  ![better](better.png)  |
 
-## Part 4 Compare DBMS with File I/O (35%)
+## Part 4 Compare DBMS with File I/O
+
+### Basic Requirements
+
+#### Description of your test environment
+
+> While reporting the environment, you can think about this question: If someone else is going to replicate your experiment, what necessary information should be provided for him/her?
+
+##### Hardware specification
+
+CPU Model:
+
+Memory size:
+
+Disk:
+
+##### Software specification
+
+DBMS:
+
+OS:
+
+Programming language:
+
+Development environment:
+
+#### Specification of test data
+
+##### DDLs
+
+
+
+##### Data format
+
+
+
+#### Description of code
+
+> A description of your test SQL script and the source code of your program. DO NOT copy and paste the entire script and the program in the report. Instead, please submit source codes as attachments.
+
+#### Comparative study
+
+> A comparative study of the running time for the corresponding statements/operations. You are encouraged to use data visualization to present the results. Besides a list/figure of the running time, you are required to describe the major differences with respect to running performance, what you find interesting in the results, what insights you may show to other people in the experiments, etc.
+
