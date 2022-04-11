@@ -6,7 +6,7 @@
 | ------------ | -------- | -------- |
 | Name         | 林洁芳   | 汤奕飞   |
 | Student ID   | 12011543 | 12011906 |
-| Lab session  | Lab 2    | Lab      |
+| Lab session  | Lab 2    | Lab 2    |
 
 ## Part 1 E-R Diagram
 
