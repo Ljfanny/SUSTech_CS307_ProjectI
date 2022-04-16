@@ -85,7 +85,7 @@ public class DatabaseManipulation implements DataManipulation {
             preparedStatement.setString(4, orderInfo[3]);
             preparedStatement.setString(5, orderInfo[4]);
             preparedStatement.setString(6, orderInfo[5]);
-            System.out.println(preparedStatement.toString());
+//            System.out.println(preparedStatement.toString());
             res = preparedStatement.executeUpdate();
         } catch (SQLException | ParseException e) {
             e.printStackTrace();
