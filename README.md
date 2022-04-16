@@ -282,35 +282,39 @@ The table below shows the screenshots of the output results.
 
 #### Description of your test environment
 
-> While reporting the environment, you can think about this question: If someone else is going to replicate your experiment, what necessary information should be provided for him/her?
+If you need to test, use Java and you can use JDK17 with PostgreSQL configured. The test environment requirements are not strict.
 
 ##### Hardware specification
 
-CPU Model:
+CPU Model: 12th Gen Intel(R) Core(TM) i7-12700H   2.70 GHz
 
-Memory size:
+Memory size: 16.0 GB (15.8 GB usable)
 
-Disk:
+Disk: 
+
+<img src="graphs\ljf-磁盘.png" alt="ljf-磁盘" style="zoom:67%;" />
 
 ##### Software specification
 
-DBMS:
+DBMS: PostgreSQL
 
-OS:
+OS: Windows11
 
-Programming language:
+Programming language: Java, SQL
 
-Development environment:
+Development environment: IDEA, DataGrip
 
 #### Specification of test data
 
 ##### DDLs
 
-
+<img src="graphs\order-DDL.png" alt="order-DDL" style="zoom: 67%;" />
 
 ##### Data format
 
+Separated by **commas**.
 
+<img src="D:\LearningMaterial\sophomore_second\DB\proj\SUSTech_CS307_2022-mid-term-project\graphs\DBMS-format.png" alt="DBMS-format" style="zoom: 67%;" />
 
 #### Description of code
 
