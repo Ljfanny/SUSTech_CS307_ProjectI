@@ -2,11 +2,11 @@
 
 ## Group Information
 
-| Group member | Member 1                                                     | Member 2                                                     |
-| ------------ | :----------------------------------------------------------- | ------------------------------------------------------------ |
-| Name and SID | 林洁芳 12011543                                              | 汤奕飞 12011906                                              |
-| Lab session  | Lab 2                                                        | Lab 2                                                        |
-| Tasks        | Task 2, Task 3, Task 4(Basic requirements, High concurrency and thread safety) | Task 1, Task 2, Task 4(Privilege management and different DBMS) |
+| Name        | 林洁芳                                                       | 汤奕飞                                                       |
+| ----------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
+| SID         | 12011543                                                     | 12011906                                                     |
+| Lab session | Lab 2                                                        | Lab 2                                                        |
+| Tasks       | Task 2, Task 3, Task 4(Basic requirements, High concurrency and thread safety) | Task 1, Task 2, Task 4(Privilege management and different DBMS) |
 
 ## Part 1 E-R Diagram
 
