@@ -2,15 +2,15 @@
 
 ## Group Information
 
-| Group member | Member 1 | Member 2 |
-| ------------ | -------- | -------- |
-| Name         | 林洁芳   | 汤奕飞   |
-| Student ID   | 12011543 | 12011906 |
-| Lab session  | Lab 2    | Lab 2    |
+| Group member | Member 1                                                     | Member 2                                                     |
+| ------------ | :----------------------------------------------------------- | ------------------------------------------------------------ |
+| Name and SID | 林洁芳 12011543                                              | 汤奕飞 12011906                                              |
+| Lab session  | Lab 2                                                        | Lab 2                                                        |
+| Tasks        | Task 2, Task 3, Task 4(Basic requirements, High concurrency and thread safety) | Task 1, Task 2, Task 4(Privilege management and different DBMS) |
 
 ## Part 1 E-R Diagram
 
-![](graphs/ER图.png)
+<img src="graphs/ER图.png"  />
 
 This Diagram is made with [ProcessOn](www.processon.com).
 
@@ -24,16 +24,6 @@ This Diagram is made with [ProcessOn](www.processon.com).
 
 We used the E-R model to design database. Since there are no many-to-many relationships, each table is a set of entities and foreign keys are used to represent one-to-many or one-to-one relationships. Orders, contracts, models and mobile phones are weak entity sets because they all depend on other entities for their existence. In particular, salesmen should exist with mobile_phones or supply center, but we still consider them to be independent of any entity. We always observe the three normal forms in designing. For example, we divide all people(including salesmen and directors) name into first name and surname for 1NF, we separate contracts and products from orders and models for 2NF and 3NF.
 
-- directors: In this table, there are first name and surname of directors, with the serial primary key director_id to identify directors uniquely.
-- supply_centers: In this table, there are supply_center of their unique name as primary key, and the foreign key of their directors' id.
-- client_enterprises: In this table, there are name(unique), industry, city, country and supply_center of enterprises, with the serial primary key client_enterprise_id.
-- contracts: In this table, there are contract_date, foreign key of client_enterprise_id, and the contract_number as the primary key.
-- salesmen: In this table, there are first name, surname, salesman_number(unique), gender, age, supply_center of salesmen, with the serial primary key salesman_id.
-- mobile_phones: In this table, there are only salesman_id as primary key and the phone_number to indicate the one-to-many relation ship, considering the possibility of one having multiple phone numbers.
-- products: In this table, there are products' codes as primary key and their names.
-- models: In this table, there are models' names(unique) and their corresponding prices and codes, with the serial primary key model_id.
-- orders: In this table, there are estimated delivery dates, lodgement dates, quantities of orders, and foreign keys of salesman_id, model_id, contract_number to indicate order's subordination to them, with the serial primary key order_id.
-
 ## Part 3 Data Import
 
 ### Basic data import
@@ -41,218 +31,18 @@ We used the E-R model to design database. Since there are no many-to-many relati
 #### Script(take orders as a example)
 
 ```java
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.text.SimpleDateFormat;
-import java.util.Objects;
-import java.util.Properties;
-
 public class import_order {
-    private static final int BATCH_SIZE = 500;
-
-    private static Connection con = null;
-    private static PreparedStatement stmt = null;
-    private static PreparedStatement sid = null;
-    private static boolean verbose = false;
-
-    private static void openDB(String host, String dbname,
-                               String user, String pwd) {
-        try {
-            Class.forName("org.postgresql.Driver");
-        } catch (Exception e) {
-            System.err.println("Cannot find the Postgres driver. Check CLASSPATH.");
-            System.exit(1);
-        }
-        String url = "jdbc:postgresql://" + host + "/" + dbname;
-        Properties props = new Properties();
-        props.setProperty("user", user);
-        props.setProperty("password", pwd);
-        try {
-            con = DriverManager.getConnection(url, props);
-            if (verbose) {
-                System.out.println("Successfully connected to the database "
-                    + dbname + " as " + user);
-            }
-            con.setAutoCommit(false);
-        } catch (SQLException e) {
-            System.err.println("Database connection failed");
-            System.err.println(e.getMessage());
-            System.exit(1);
-        }
-        try {
-            stmt = con.prepareStatement(
-                "insert into orders(estimated_delivery_date, Lodgement_date, quantity, salesman_id, model_id, contract_number)"
-                    +
-                    " values(?,?,?,(select salesman_id from salesmen where salesman_number = ?)," +
-                    "(select model_id from models where product_model = ?),?)");
-        } catch (SQLException e) {
-            System.err.println("Insert statement failed");
-            System.err.println(e.getMessage());
-            closeDB();
-            System.exit(1);
-        }
-    }
-
-    private static void closeDB() {
-        if (con != null) {
-            try {
-                if (stmt != null) {
-                    stmt.close();
-                }
-                con.close();
-                con = null;
-            } catch (Exception e) {
-                // Forget about it
-            }
-        }
-    }
-
-    private static void loadData(Date estimated_delivery_date, Date lodgement_date,
-                                 int quantity, String number, String pro_model,
-                                 String contract_number)
-        throws SQLException {
-        if (con != null) {
-            try {
-                stmt.setDate(1, estimated_delivery_date);
-                stmt.setDate(2, lodgement_date);
-                stmt.setInt(3, quantity);
-                stmt.setString(4, number);
-                stmt.setString(5, pro_model);
-                stmt.setString(6, contract_number);
-                stmt.addBatch();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-        }
-    }
-
-    public static void main(String[] args) {
-        String fileName = null;
-        boolean verbose = false;
-
-        switch (args.length) {
-            case 1:
-                fileName = args[0];
-                break;
-            case 2:
-                switch (args[0]) {
-                    case "-v":
-                        verbose = true;
-                        break;
-                    default:
-                        System.err.println("Usage: java [-v] GoodLoader filename");
-                        System.exit(1);
-                }
-                fileName = args[1];
-                break;
-            default:
-                System.err.println("Usage: java [-v] GoodLoader filename");
-                System.exit(1);
-        }
-
-        Properties defprop = new Properties();
-        defprop.put("host", "localhost");
-        defprop.put("user", "postgres");
-        defprop.put("password", "216122");
-        defprop.put("database", "proj1");
-        Properties prop = new Properties(defprop);
-
-        try (BufferedReader infile
-                 = new BufferedReader(new FileReader(fileName))) {
-            long start;
-            long end;
-            String line;
-            String[] parts;
-            int cnt = 0;
-            
-            openDB(prop.getProperty("host"), prop.getProperty("database"),
-                prop.getProperty("user"), prop.getProperty("password"));
-            Statement stmt0;
-            if (con != null) {
-                stmt0 = con.createStatement();
-                stmt0.execute("truncate table orders");
-                stmt0.execute("alter table orders disable trigger all");
-                stmt0.close();
-            }
-            closeDB();
-            
-            start = System.currentTimeMillis();
-            openDB(prop.getProperty("host"), prop.getProperty("database"),
-                prop.getProperty("user"), prop.getProperty("password"));
-            while ((line = infile.readLine()) != null) {
-                parts = line.split(";");
-                if (parts.length > 1) {
-                    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-                    java.util.Date d1 = null;
-                    java.util.Date d2 = null;
-                    try {
-                        d1 = format.parse(parts[0]);
-                        if (!Objects.equals(parts[1], "")) {
-                            d2 = format.parse(parts[1]);
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    assert d1 != null;
-                    Date rig1 = new Date(d1.getTime());
-                    Date rig2 = null;
-                    if (d2 != null) {
-                        rig2 = new Date(d2.getTime());
-                    }
-                    loadData(rig1, rig2, Integer.parseInt(parts[2]), parts[3], parts[4], parts[5]);
-                    cnt++;
-                    if (cnt % BATCH_SIZE == 0) {
-                        stmt.executeBatch();
-                        stmt.clearBatch();
-                    }
-                }
-            }
-            if (cnt % BATCH_SIZE != 0) {
-                stmt.executeBatch();
-            }
-            con.commit();
-            stmt.close();
-            closeDB();
-            end = System.currentTimeMillis();
-            System.out.println(cnt + " records successfully loaded");
-            System.out.println("Loading speed : "
-                + (cnt * 1000) / (end - start)
-                + " records/s");
-        } catch (SQLException se) {
-            System.err.println("SQL error: " + se.getMessage());
-            try {
-                con.rollback();
-                stmt.close();
-            } catch (Exception e2) {
-            }
-            closeDB();
-            System.exit(1);
-        } catch (IOException e) {
-            System.err.println("Fatal error: " + e.getMessage());
-            try {
-                con.rollback();
-                stmt.close();
-            } catch (Exception e2) {
-            }
-            closeDB();
-            System.exit(1);
-        }
-        closeDB();
-    }
+    private static void openDB(String host, String dbname, String user, String pwd) {}
+    private static void closeDB() {}
+    private static void loadData(Date estimated_delivery_date, Date lodgement_date, int quantity, String number, String pro_model, String contract_number) throws SQLException {}
+    public static void main(String[] args) {}
 }
 
 ```
 
 #### Description
 
-> A description of how you use the script to import data. You should clearly state the steps, necessary prerequisites, and cautions in order to run the script and import data correctly.
+For the sake of brevity, we extracted the raw data into several .txt files, corresponding to each table's data import. In each import.java file, we only need to adjust the parameters and their positions.
 
 ### Comparative analysis of computational efficiencies between different ways in importing
 
@@ -262,69 +52,71 @@ public class import_order {
 |   2   | No acceleration operation is used, only keeping the database connection open during reading and writing data. | 4895 records/s  |  50,000   |
 |   3   | The SQL statement of insert is compiled in advance by using pre-compilation, and the database connection is established and disconnected only once, and there is still no optimization in reading and writing data. | 8882 records/s  |  50,000   |
 |   4   | We use the pre-compilation method to compile the insert SQL statement in advance, and only once to establish and disconnect the database connection. In terms of reading and writing data, we avoid writing data directly to disk for each insert operation, which is time consuming, so we use to write data to cache first, wait for inserted data to be stored in the cache, and then write them to disk together. | 17223 records/s |  50,000   |
-|   5   | The SQL statements for insert are compiled in advance using pre-compilation and only one database connection is established and disconnected. The batch mechanism allows several SQL statements to be executed together. In terms of reading and writing data, the data is written to the cache first, and then written to disk after all the data to be inserted is stored in the cache. | 32938 records/s |  50,000   |
-|   6   | We use pre-compilation to compile the insert SQL statement in advance, and only once to establish and disconnect the database connection. In terms of reading and writing data, the data is first written to the cache, and then written to disk after all the data to be inserted is stored in the cache. Batch processing is not used, after several tests, batch processing will greatly reduce the efficiency of insert statement execution. In addition, we disable trigger and foreign key checking, thus slightly improving the efficiency of insert statement execution. | 51599 records/s |  50,000   |
 
-The table below shows the screenshots of the output results.
+| 5    | The SQL statements for insert are compiled in advance using pre-compilation and only one database connection is established and disconnected. The batch mechanism allows several SQL statements to be executed together. In terms of reading and writing data, the data is written to the cache first, and then written to disk after all the data to be inserted is stored in the cache. | 32938 records/s | 50,000 |
+| ---- | ------------------------------------------------------------ | --------------- | ------ |
+| 6    | We use pre-compilation to compile the insert SQL statement in advance, and only once to establish and disconnect the database connection. In terms of reading and writing data, the data is first written to the cache, and then written to disk after all the data to be inserted is stored in the cache. Batch processing is not used, after several tests, batch processing will greatly reduce the efficiency of insert statement execution. In addition, we disable trigger and foreign key checking, thus slightly improving the efficiency of insert statement execution. | 51599 records/s | 50,000 |
 
-| Level |             Graph              |
-| :---: | :----------------------------: |
-|   1   |   ![awful](graphs/awful.png)   |
-|   2   | ![verybad](graphs/verybad.png) |
-|   3   |     ![bad](graphs/bad.png)     |
-|   4   | ![average](graphs/average.png) |
-|   5   |    ![good](graphs/good.png)    |
-|   6   |  ![better](graphs/better.png)  |
+The screenshots of the output results can be seen in fold graphs.
 
 ## Part 4 Compare DBMS with File I/O
 
-### Basic Requirements
-
-#### Description of your test environment
+### Description of your test environment
 
 If you need to test, use Java and you can use JDK17 with PostgreSQL configured. The test environment requirements are not strict.
 
-##### Hardware specification
+#### Hardware specification
 
-CPU Model: 12th Gen Intel(R) Core(TM) i7-12700H   2.70 GHz
+CPU Model: 12th Gen Intel(R) Core(TM) i7-12700H 2.70 GHz, AMD Ryzen 7 5800H with Radeon Graphics 3.20 GHz
 
-Memory size: 16.0 GB (15.8 GB usable)
+Memory size: 16.0 GB
 
-Disk: 
+Disk: SSD
 
-<img src="graphs\ljf-磁盘.png" alt="ljf-磁盘" style="zoom:67%;" />
+#### Software specification
 
-##### Software specification
+DBMS: PostgreSQL 14.2, SQLite 3.38.2
 
-DBMS: PostgreSQL
-
-OS: Windows11
+OS: Windows 11 家庭中文版 21H2
 
 Programming language: Java, SQL
 
-Development environment: IDEA, DataGrip
+Development environment: IntelliJ IDEA 2022.1 (Community Edition), DataGrip 2022.1.1
 
-#### Specification of test data
+### Specification of test data
 
-##### DDLs
+#### DDLs
 
-<img src="graphs\order-DDL.png" alt="order-DDL" style="zoom: 67%;" />
+```sql
+create table orders
+(
+    order_id                serial primary key,
+    estimated_delivery_date date    not null,
+    lodgement_date          date,
+    quantity                integer not null,
+    salesman_id             integer not null references salesmen,
+    model_id                integer not null references models,
+    contract_number         varchar not null references contracts
+);
+```
 
-##### Data format
+
+
+#### Data format
 
 Separated by **commas**.
 
-<img src="D:\LearningMaterial\sophomore_second\DB\proj\SUSTech_CS307_2022-mid-term-project\graphs\DBMS-format.png" alt="DBMS-format" style="zoom: 67%;" />
+<img src="graphs/DBMS-format.png" alt="DBMS-format" style="zoom: 67%;" />
 
-#### Description of code
+### Description of code
 
-<img src="D:\LearningMaterial\sophomore_second\DB\proj\SUSTech_CS307_2022-mid-term-project\graphs\增删改查.png" alt="增删改查" style="zoom:50%;" />
+<img src="graphs/增删改查.png" alt="增删改查" style="zoom:50%;" />
 
 The graph above shows the methods we tested for insert, delete, update and select. The lookup statement is divided into three different levels of difficulty, which will be explained in detail in the next section(**Comparative study**), and the complete code is attached separately.
 
-#### Comparative study
+### Comparative study
 
-##### Insert-Efficiency Comparison
+#### Insert-Efficiency Comparison
 
 Using a Java script to generate 300,000 test data, we test the performance difference between file and database in terms of inserting data using these 300,000 pieces of data. First, a single thread, the main thread, is tested for inserting data. This screenshot below is a screenshot of **generating a data file**, reading the information in that file, simulating a database insert operation, and inserting the data into the **proj1.public.orders.csv** file.
 
@@ -363,9 +155,9 @@ The following graph reflects the results of five tests, **IO is roughly twice as
 
 In summary, the database can handle large data very well, so for the operation of inserting data, the database will be about twice as slow as simply writing to a local file in order to ensure that each variable of the data makes sense and that it is easy to query later.
 
-##### select-Efficiency Comparison
+#### select-Efficiency Comparison
 
-###### 1.\<easy>select id
+##### 1.\<easy>select id
 
 The search is very routine and is a lookup of a certain self-incrementing id variable with the following sql statement.
 
@@ -380,7 +172,7 @@ The following table is a comparison of the query efficiency of file and database
 |    DBMS    | ![数据库搜索id](graphs\数据库搜索id.png) |
 |    File    |   ![文件搜索id](graphs\文件搜索id.png)   |
 
-###### 2.\<middle>select client enterprise name
+##### 2.\<middle>select client enterprise name
 
 The search statement uses two joins, using the convenience of the database, the three tables of data correspondence, so as to find **the order is responsible for the name of the client enterprise**.
 
@@ -401,7 +193,7 @@ From the above table, we can see that the file search is many times faster than 
 
 Since the database system utilizes the join (inner join) keyword, it means that a new table needs to be generated before the query can be performed. The inner join creates a new result table by combining the column values of two tables **(table1 and table2)** based on the join predicate. The query **compares each row in table1 with each row in table2 and finds all matching pairs of rows that satisfy the join predicate**. When the join predicate is satisfied, the column values of each matching pair in rows A and B are combined into one result row. Therefore, this operation consumes a lot of time and is an important reason why database search is slower than file search.
 
-###### 3.\<different>select each salesman responsible for orders
+##### 3.\<different>select each salesman responsible for orders
 
 This query statement is designed to find out which orders the same salesman is responsible for.
 
@@ -459,15 +251,13 @@ The **update statement** for the file system is to rewrite the file after updati
 
 The following two figures reflect the results of five tests of delete operations and update operations **with IO tens of times slower than DBMS.**
 
-<img src="graphs/delete.png" alt="delete" style="zoom:50%;" />
-
-<img src="graphs/update.png" alt="update" style="zoom:50%;" />
+<img src="graphs/update&delete.png" alt="update&delete" style="zoom:50%;" />
 
 It is obvious from the execution efficiency of update and delete that the file system has a big performance loophole. Since the file system cannot operate on the inside of the file, such as not being able to delete one of the rows or modify the value of one of the rows, so the command involving modification has to rewrite the file once, which greatly reduces the efficiency, while the delete and add operations of the database can effectively avoid the performance loss caused by frequent file writes after special processing in the bottom layer, such as marking.
 
-#### *High concurrency and thread safety
+### *High concurrency and thread safety
 
-##### Introduction
+#### Introduction
 
 A very prominent highlight of the database is that transactions can maintain thread safety well and effectively handle high concurrency (i.e. multiple requests at the same time). **sql** statements are converted into transactions and submitted to the server, and then the database does the processing of inserting, deleting, selecting, and updating. However, if the file alone is used to store and process data, it will lose security because the file read and write does not automatically maintain thread safety, and naturally does not have the ability to handle high concurrency, so if you want to protect the thread safety of file read and write and data process, you have to **manually lock**.
 
@@ -486,7 +276,6 @@ So the locking method of read locks is more complicated than that of write locks
 //The first step is to get the optimistic read state of the StampLock object, which means that the optimistic read lock is put on first.
 long stamp = sl.tryOptimisticRead();
 //The specific process of reading.
-
 //If the return value is false, it means that another thread has modified the same object during the optimistic read, so a pessimistic lock is needed to re-read the data.
 if (!sl.validate(stamp)){
   //Upgrade optimism lock to pessimism lock.
@@ -513,7 +302,7 @@ try {
 }
 ```
 
-##### Result
+#### Result
 
 To improve the security of **IO** and make it able to handle multiple concurrency (using multiple threads), we add a lock to **FileManipulation**.
 
@@ -583,7 +372,7 @@ From the results of writing to the file(below), it can be proved that the write 
 
 <img src="graphs/多线程数据展示.png" alt="多线程数据展示" style="zoom:67%;" />
 
-##### *Extra
+#### *Extra
 
 The **transaction management mechanism** of database is unique in the field of handling high concurrency, so we can refer to the transaction management mechanism of database and thus design **Software Transactional Memory (STM for short)**.
 
@@ -596,12 +385,75 @@ Although Java does not support **STM**, it can be supported by a third-party lib
 - **Txn**: The current transaction in which the read/write operation is located, and the internal curRef represents the latest value in the system.
 - **STMTxn**: is an implementation class of Txn, **complete the transaction for the data read and write**. There are two internal Map, one **inTxnMap**, used to save a snapshot of all the data read and written in the current transaction, and the second, **writeMap**, used to save the data that needs to be written in the current transaction. Each transaction has a unique transaction **ID txnId**, which is incremented globally. There are three core methods, the get() method for reading data, the set() method for writing data, and the commit() method for committing the transaction.
 
-|  Java file   |                             Code                             |
-| :----------: | :----------------------------------------------------------: |
-|     STM      |  <img src="graphs\STM.png" alt="STM" style="zoom: 50%;" />   |
-|    STMTxn    |                 ![STMTxn](graphs\STMTxn.png)                 |
-|     Txn      |   <img src="graphs\Txn.png" alt="Txn" style="zoom:50%;" />   |
-|    TxnRef    | <img src="graphs\TxnRef.png" alt="TxnRef" style="zoom:50%;" /> |
-| TxnRunnable  | <img src="graphs\TxnRunnable.png" alt="TxnRunnable" style="zoom:50%;" /> |
-| VersionedRef | <img src="graphs\VersionedRef.png" alt="VersionedRef" style="zoom:50%;" /> |
+### User Privilege Management
 
+#### DBMS
+
+We first create three roles with different privileges.
+
+```sql
+create role cs307 with password 'pswd';
+create user cs308 with password 'pswd';
+create user cs309 superuser;
+alter user cs309 password 'pswd';
+```
+
+We list the roles.
+
+![](graphs/00000.png)
+
+It can be found that cs307 is not allowed to log in.
+
+![](graphs/00001.png)
+
+cs308 can login.
+
+![](graphs/00010.png)
+
+Then we try to operate as user cs308.
+
+![](graphs/00011.png)
+
+We log in to superuser cs309 and give cs308 privilege to select in the orders table.
+
+![](graphs/00100.png)
+
+Using cs308 select again, it now works.
+
+![](graphs/00101.png)
+
+And then try to select other tables, privilege is not enough.
+
+![](graphs/00110.png)
+
+Then, we remove these roles.
+
+![](graphs/00111.png)
+
+From this, we can see that DBMS manages user rights strictly and clearly. Therefore, it is very easy to manage user privilege with DBMS.
+
+#### File
+
+I simply constructed the Users class without storing user information and priority information, as I soon found it difficult to use user rights management in files. We can implement this by adding a different statement with a layer of judgement on priority, using the same method to store the file with encrypted users, then the file can only be accessed by the user who created it, making the file more secure. However, for file systems. If one can directly access a file in a folder and open it with other software, then he can delete or add any character, add anything he wants. For users who do not have privilege to do so, it is easy to even destroy files. As the following example shows.
+
+![](graphs/01000.png)
+
+![](graphs/01001.png)
+
+![](graphs/01010.png)
+
+#### Conclusion
+
+As we can see from this section, in terms of privilege management, it is much more difficult to implement such privilege management in a file system than in a DBMS. Secondly, if the administrator of the file system wants to implement privilege management, then he needs to make sure that the user cannot access any code or file directly. In short, for a user like me, privilege management in a file system is not only weaker than in a DBMS, but also more difficult to implement.
+
+### Comparison of different DBMS
+
+We briefly compared the performance of PSQL and SQLite from four statements, as shown below. The horizontal axis unit is the number of sql statements and the vertical axis unit is the percentage and time (milliseconds) taken.
+
+![image-20220417062150588](graphs/image-20220417062150588.png)
+
+![image-20220417062313685](graphs/image-20220417062313685.png)
+
+#### Conclusion
+
+We found that postgreSQL has a clear advantage in insert and delete, but not as good as SQLite in select. They are on par when it comes to update.
