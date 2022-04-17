@@ -433,35 +433,35 @@ alter user cs309 password 'pswd';
 
 We list the roles.
 
-<img src="graphs/00000.png" style="zoom:67%;" />
+<img src="graphs/00000.png"  />
 
 It can be found that cs307 is not allowed to log in.
 
-<img src="graphs/00001.png" style="zoom:67%;" />
+<img src="graphs/00001.png"  />
 
 cs308 can login.
 
-<img src="graphs/00010.png" style="zoom:67%;" />
+<img src="graphs/00010.png"  />
 
 Then we try to operate as user cs308.
 
-<img src="graphs/00011.png" style="zoom:67%;" />
+<img src="graphs/00011.png"  />
 
 We log in to superuser cs309 and give cs308 privilege to select in the orders table.
 
-<img src="graphs/00100.png" style="zoom:67%;" />
+<img src="graphs/00100.png"  />
 
 Using cs308 select again, it now works.
 
-<img src="graphs/00101.png" style="zoom:67%;" />
+<img src="graphs/00101.png"  />
 
 And then try to select other tables, privilege is not enough.
 
-<img src="graphs/00110.png"  />
+<img src="graphs/00110.png" style="zoom:;" />
 
 Then, we remove these roles.
 
-<img src="graphs/00111.png" style="zoom:67%;" />
+<img src="graphs/00111.png"  />
 
 From this, we can see that DBMS manages user rights strictly and clearly. Therefore, it is very easy to manage user privilege with DBMS.
 
