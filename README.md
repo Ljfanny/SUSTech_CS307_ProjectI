@@ -2,11 +2,12 @@
 
 ## Group Information
 
-| Name        | 林洁芳                                                       | 汤奕飞                                                       |
-| ----------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
-| SID         | 12011543                                                     | 12011906                                                     |
-| Lab session | Lab 2                                                        | Lab 2                                                        |
-| Tasks       | Task 2, Task 3, Task 4(Basic requirements, High concurrency and thread safety) | Task 1, Task 2, Task 4(Privilege management and different DBMS) |
+| Name               | 林洁芳                                                       | 汤奕飞                                                       |
+| ------------------ | :----------------------------------------------------------- | ------------------------------------------------------------ |
+| SID                | 12011543                                                     | 12011906                                                     |
+| Lab session        | Lab 2                                                        | Lab 2                                                        |
+| Tasks              | Task 2, Task 3, Task 4(Basic requirements, High concurrency and thread safety) | Task 1, Task 2, Task 4(Privilege management and different DBMS) |
+| Contribution ratio | 50%                                                          | 50%                                                          |
 
 ## Part 1 E-R Diagram
 
@@ -30,6 +31,8 @@ We used the E-R model to design database. Since there are no many-to-many relati
 
 #### Script(take orders as a example)
 
+The **orders table** is more complex and has more foreign keys, so the insert statement can be a bit complicated.
+
 ```java
 public class import_order {
     private static void openDB(String host, String dbname, String user, String pwd) {}
@@ -37,14 +40,34 @@ public class import_order {
     private static void loadData(Date estimated_delivery_date, Date lodgement_date, int quantity, String number, String pro_model, String contract_number) throws SQLException {}
     public static void main(String[] args) {}
 }
+```
 
+The orders table can insert data using following **SQL statement**.
+
+```sql
+insert into orders(estimated_delivery_date, Lodgement_date, 
+                   quantity, salesman_id, model_id, contract_number) 
+                   values(?,?,?,(select salesman_id from salesmen where salesman_number = ?), 
+                          (select model_id from models where product_model = ?),?);
 ```
 
 #### Description
 
-For the sake of brevity, we extracted the raw data into several .txt files, corresponding to each table's data import. In each import.java file, we only need to adjust the parameters and their positions.
+**Python scripts are used to break the raw data into the data needed for each table(.txt files), and Java is used to import the data**. In each import.java file, we only need to adjust the parameters and their positions. 
+
+**Steps**: 
+
+<img src="D:\LearningMaterial\sophomore_second\DB\proj\SUSTech_CS307_2022-mid-term-project\graphs\CG%IT60RK4VTBVH5~NEZ@2R.png" alt="CG%IT60RK4VTBVH5~NEZ@2R" style="zoom: 33%;" />
+
+**Necessary prerequisites**: Use Python scripts to split the data.
+
+**Cautions**: Tables with foreign keys cannot be cleared after being protected by the database. Each table corresponds to an imported script, so be careful about setting the program argument.
 
 ### Comparative analysis of computational efficiencies between different ways in importing
+
+This test environment is exactly **the same as the Task4 test environment**, the Task3 additional Python version is **Python 3.9.7**, and the **Python script code is attached to the ipynb file**.
+
+This section **focuses on optimizing single threads**, and when single threads are optimized enough to enable multi-threading, efficiency naturally increases. The test code is attached.
 
 | Level | Description                                                  |      Rate       | Data Size |
 | :---: | :----------------------------------------------------------- | :-------------: | :-------: |
@@ -52,12 +75,12 @@ For the sake of brevity, we extracted the raw data into several .txt files, corr
 |   2   | No acceleration operation is used, only keeping the database connection open during reading and writing data. | 4895 records/s  |  50,000   |
 |   3   | The SQL statement of insert is compiled in advance by using pre-compilation, and the database connection is established and disconnected only once, and there is still no optimization in reading and writing data. | 8882 records/s  |  50,000   |
 |   4   | We use the pre-compilation method to compile the insert SQL statement in advance, and only once to establish and disconnect the database connection. In terms of reading and writing data, we avoid writing data directly to disk for each insert operation, which is time consuming, so we use to write data to cache first, wait for inserted data to be stored in the cache, and then write them to disk together. | 17223 records/s |  50,000   |
+|   5   | The SQL statements for insert are compiled in advance using pre-compilation and only one database connection is established and disconnected. The batch mechanism allows several SQL statements to be executed together. In terms of reading and writing data, the data is written to the cache first, and then written to disk after all the data to be inserted is stored in the cache. | 32938 records/s |  50,000   |
+|   6   | We use pre-compilation to compile the insert SQL statement in advance, and only once to establish and disconnect the database connection. In terms of reading and writing data, the data is first written to the cache, and then written to disk after all the data to be inserted is stored in the cache. Batch processing is not used, after several tests, batch processing will greatly reduce the efficiency of insert statement execution. In addition, we disable trigger and foreign key checking, thus slightly improving the efficiency of insert statement execution. | 51599 records/s |  50,000   |
 
-| 5    | The SQL statements for insert are compiled in advance using pre-compilation and only one database connection is established and disconnected. The batch mechanism allows several SQL statements to be executed together. In terms of reading and writing data, the data is written to the cache first, and then written to disk after all the data to be inserted is stored in the cache. | 32938 records/s | 50,000 |
-| ---- | ------------------------------------------------------------ | --------------- | ------ |
-| 6    | We use pre-compilation to compile the insert SQL statement in advance, and only once to establish and disconnect the database connection. In terms of reading and writing data, the data is first written to the cache, and then written to disk after all the data to be inserted is stored in the cache. Batch processing is not used, after several tests, batch processing will greatly reduce the efficiency of insert statement execution. In addition, we disable trigger and foreign key checking, thus slightly improving the efficiency of insert statement execution. | 51599 records/s | 50,000 |
+The following graph shows the **significant results of efficiency optimization in the form of visualization**. Efficiency has indeed been greatly improved.
 
-The screenshots of the output results can be seen in fold graphs.
+<img src="graphs\task3.png" alt="task3" style="zoom:50%;" />
 
 ## Part 4 Compare DBMS with File I/O
 
@@ -100,13 +123,11 @@ create table orders
 );
 ```
 
-
-
 #### Data format
 
 Separated by **commas**.
 
-<img src="graphs/DBMS-format.png" alt="DBMS-format" style="zoom: 67%;" />
+<img src="graphs/DBMS-format.png" alt="DBMS-format" style="zoom: 50%;" />
 
 ### Description of code
 
@@ -120,7 +141,7 @@ The graph above shows the methods we tested for insert, delete, update and selec
 
 Using a Java script to generate 300,000 test data, we test the performance difference between file and database in terms of inserting data using these 300,000 pieces of data. First, a single thread, the main thread, is tested for inserting data. This screenshot below is a screenshot of **generating a data file**, reading the information in that file, simulating a database insert operation, and inserting the data into the **proj1.public.orders.csv** file.
 
-<img src="graphs/生成数据.png" alt="生成数据" style="zoom:67%;" />
+<img src="graphs/生成数据.png" alt="生成数据" style="zoom: 50%;" />
 
 ```sql
 -- the sql statement of inserting the data into the table named orders;
@@ -132,14 +153,14 @@ values(?,?,?,
 
 The file is 50,000 data before inserting data, and 350,000 data after inserting, which proves that the insertion is successful.
 
-<img src="graphs/数据插入成功.png" alt="数据插入成功" style="zoom:67%;" />
+<img src="graphs/数据插入成功.png" alt="数据插入成功" style="zoom: 50%;" />
 
 We do not turn off insert checking of the database, including foreign key checking, and do not apply batch processing, do not take advantage of traversal acceleration of transactions (writing first to the cache and then to disk together), that is, **we do not use acceleration to allow the database to be compared with the file system**.
 
-| Insertion Efficiency |                  Screenshot                  |
-| :------------------: | :------------------------------------------: |
-|         DBMS         | ![数据插入数据库](graphs\数据插入数据库.png) |
-|         File         |   ![文件插入数据](graphs\文件插入数据.png)   |
+| Insertion Efficiency |                          Screenshot                          |
+| :------------------: | :----------------------------------------------------------: |
+|         DBMS         |         ![数据插入数据库](graphs\数据插入数据库.png)         |
+|         File         | <img src="graphs\文件插入数据.png" alt="文件插入数据" style="zoom:50%;" /> |
 
 As can be seen from the table above, database inserts may not actually be as fast as file inserts, for several reasons:
 
@@ -184,10 +205,10 @@ from orders
 where order_id = ?;
 ```
 
-| Efficiency |                    Screenshot                    |
-| :--------: | :----------------------------------------------: |
-|    DBMS    | ![数据库搜索公司名](graphs\数据库搜索公司名.png) |
-|    File    |   ![文件搜索公司名](graphs\文件搜索公司名.png)   |
+| Efficiency |                          Screenshot                          |
+| :--------: | :----------------------------------------------------------: |
+|    DBMS    | <img src="graphs\数据库搜索公司名.png" alt="数据库搜索公司名" style="zoom: 50%;" /> |
+|    File    |         ![文件搜索公司名](graphs\文件搜索公司名.png)         |
 
 From the above table, we can see that the file search is many times faster than the database search. In fact, in the class loading stage, the file system has stored the table information in the **hashmap** separately, and since the lookups are all using the **hashmap**, the time complexity of each lookup is **O(1)**, so it is reasonable to be able to be **10 times** more efficient than the database system.
 
@@ -215,7 +236,7 @@ group by sub.salesman_id;
 
 This query result is:
 
-<img src="graphs/agg.png" alt="agg" style="zoom:67%;" />
+<img src="graphs/agg.png" alt="agg" style="zoom: 50%;" />
 
 | Efficiency |                        Screenshot                        |
 | :--------: | :------------------------------------------------------: |
@@ -237,17 +258,17 @@ The above query and insert statements do not reflect the advantages of the datab
 
 The **delete statement** for the file system is to delete the value in the hashmap and rewrite the file, while the database system does not really delete the data, but **a logical deletion**, that is, the underlying database actually just gives the deleted data a deleted mark, so the size of the table after the deletion of data and before the deletion is the same, which eliminates the time consumption of rewriting and improves the efficiency of deletion.
 
-| Efficiency |              Screenshot              |
-| :--------: | :----------------------------------: |
-|    DBMS    | ![数据库删除](graphs\数据库删除.png) |
-|    File    |   ![文件删除](graphs\文件删除.png)   |
+| Efficiency |                          Screenshot                          |
+| :--------: | :----------------------------------------------------------: |
+|    DBMS    | <img src="graphs\数据库删除.png" alt="数据库删除" style="zoom: 50%;" /> |
+|    File    | <img src="graphs\文件删除.png" alt="文件删除" style="zoom:50%;" /> |
 
 The **update statement** for the file system is to rewrite the file after updating the value in the hashmap, while the database system can add the corresponding data and avoid the process of file deletion and rewriting.
 
-| Efficiency |              Screenshot              |
-| :--------: | :----------------------------------: |
-|    DBMS    | ![数据库修改](graphs\数据库修改.png) |
-|    File    |   ![文件修改](graphs\文件修改.png)   |
+| Efficiency |                          Screenshot                          |
+| :--------: | :----------------------------------------------------------: |
+|    DBMS    | <img src="graphs\数据库修改.png" alt="数据库修改" style="zoom:50%;" /> |
+|    File    | <img src="graphs\文件修改.png" alt="文件修改" style="zoom:50%;" /> |
 
 The following two figures reflect the results of five tests of delete operations and update operations **with IO tens of times slower than DBMS.**
 
@@ -263,7 +284,7 @@ A very prominent highlight of the database is that transactions can maintain thr
 
 As you can see in the class variable declaration below, we declare a **StampedLock object** as a static global variable to protect other global variables from being read and written safely in multiple threads, i.e., we use locks to handle the high concurrency of file reads and writes.
 
-<img src="graphs/上锁声明.png" alt="上锁声明" style="zoom:67%;" />
+<img src="graphs/上锁声明.png" alt="上锁声明" style="zoom: 50%;" />
 
 In fact, **StampedLock** is a new read/write lock added to Java 8, which is an improvement on **ReentrantReadWriteLock**. the synchronization state of **StampedLock** contains a version and a pattern, the methods that get the lock return a stamp indicating the state of the lock, and the "try" version of these methods returns a special value 0 means that the lock failed to be acquired.
 
@@ -370,7 +391,7 @@ We can get the **following results**. From the results, we can see that the info
 
 From the results of writing to the file(below), it can be proved that the write lock can maintain the thread safety well, and writing 10 data at the same time (writing to the file) and deleting one of them (clearing the file and rewriting it) did not make any error in the data. Therefore, the correct use of locks can maintain thread safety, handle high concurrency, and thus better simulate the characteristics of database transactions.
 
-<img src="graphs/多线程数据展示.png" alt="多线程数据展示" style="zoom:67%;" />
+<img src="graphs/多线程数据展示.png" alt="多线程数据展示" style="zoom: 50%;" />
 
 #### *Extra
 
@@ -384,6 +405,8 @@ Although Java does not support **STM**, it can be supported by a third-party lib
 - **TxnRef**: completes the read and write operations within the transaction, the read and write operations are delegated to the interface Txn.
 - **Txn**: The current transaction in which the read/write operation is located, and the internal curRef represents the latest value in the system.
 - **STMTxn**: is an implementation class of Txn, **complete the transaction for the data read and write**. There are two internal Map, one **inTxnMap**, used to save a snapshot of all the data read and written in the current transaction, and the second, **writeMap**, used to save the data that needs to be written in the current transaction. Each transaction has a unique transaction **ID txnId**, which is incremented globally. There are three core methods, the get() method for reading data, the set() method for writing data, and the commit() method for committing the transaction.
+
+<img src="graphs\image-20220417183644269.png" alt="image-20220417183644269" style="zoom:67%;" />
 
 ### User Privilege Management
 
@@ -400,35 +423,35 @@ alter user cs309 password 'pswd';
 
 We list the roles.
 
-![](graphs/00000.png)
+<img src="graphs/00000.png" style="zoom:67%;" />
 
 It can be found that cs307 is not allowed to log in.
 
-![](graphs/00001.png)
+<img src="graphs/00001.png" style="zoom:67%;" />
 
 cs308 can login.
 
-![](graphs/00010.png)
+<img src="graphs/00010.png" style="zoom:67%;" />
 
 Then we try to operate as user cs308.
 
-![](graphs/00011.png)
+<img src="graphs/00011.png" style="zoom:67%;" />
 
 We log in to superuser cs309 and give cs308 privilege to select in the orders table.
 
-![](graphs/00100.png)
+<img src="graphs/00100.png" style="zoom:67%;" />
 
 Using cs308 select again, it now works.
 
-![](graphs/00101.png)
+<img src="graphs/00101.png" style="zoom:67%;" />
 
 And then try to select other tables, privilege is not enough.
 
-![](graphs/00110.png)
+<img src="graphs/00110.png" style="zoom:67%;" />
 
 Then, we remove these roles.
 
-![](graphs/00111.png)
+<img src="graphs/00111.png" style="zoom:67%;" />
 
 From this, we can see that DBMS manages user rights strictly and clearly. Therefore, it is very easy to manage user privilege with DBMS.
 
@@ -438,9 +461,9 @@ I simply constructed the Users class without storing user information and priori
 
 ![](graphs/01000.png)
 
-![](graphs/01001.png)
+<img src="graphs/01001.png" style="zoom:50%;" />
 
-![](graphs/01010.png)
+<img src="graphs/01010.png" style="zoom:50%;" />
 
 #### Conclusion
 
