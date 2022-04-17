@@ -25,6 +25,16 @@ This Diagram is made with [ProcessOn](www.processon.com).
 
 We used the E-R model to design database. Since there are no many-to-many relationships, each table is a set of entities and foreign keys are used to represent one-to-many or one-to-one relationships. Orders, contracts, models and mobile phones are weak entity sets because they all depend on other entities for their existence. In particular, salesmen should exist with mobile_phones or supply center, but we still consider them to be independent of any entity. We always observe the three normal forms in designing. For example, we divide all people(including salesmen and directors) name into first name and surname for 1NF, we separate contracts and products from orders and models for 2NF and 3NF.
 
+- directors: It contains name of directors with id serial primary key
+- supply_centers: It contains the name of supply centers and the directors' id
+- salesmen: It contains name, number, gender, age of salesmen and supply center they belonging to, with id primary key
+- mobile_phones: It contains phone number and salesmen's id they belonging to
+- client_enterprises: It contains name, industry, city, country and supply center of enterprises with id serial primary key
+- contracts: It contains contract date, enterprise's id and contract numbers as primary key
+- products: It contains name and code of products
+- models: It contains model name, unit price and product code they belonging to, with id serial primary key
+- orders: It contains estimated date, lodgement date, quantity, salesman's id, model's id and contract number of orders, with id serial primary key
+
 ## Part 3 Data Import
 
 ### Basic data import
@@ -447,7 +457,7 @@ Using cs308 select again, it now works.
 
 And then try to select other tables, privilege is not enough.
 
-<img src="graphs/00110.png" style="zoom:67%;" />
+<img src="graphs/00110.png"  />
 
 Then, we remove these roles.
 
@@ -461,9 +471,9 @@ I simply constructed the Users class without storing user information and priori
 
 ![](graphs/01000.png)
 
-<img src="graphs/01001.png" style="zoom:50%;" />
+<img src="graphs/01001.png"  />
 
-<img src="graphs/01010.png" style="zoom:50%;" />
+<img src="graphs/01010.png"  />
 
 #### Conclusion
 
